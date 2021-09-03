@@ -1,0 +1,14 @@
+.navbar-container {
+  background-color: #40916C;
+  padding: 15px;
+}
+
+@media only screen and (min-width : 990px) {
+  #basic-navbar-nav {
+    margin-left: 50%;
+  }
+}
+
+/* #basic-navbar-nav {
+  margin-left: 50%;
+} */
