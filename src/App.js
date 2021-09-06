@@ -1,4 +1,4 @@
-import Header from './Components/Header';
+import Home from './Pages/Home';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import React, { Component } from 'react';
 
@@ -7,7 +7,7 @@ class  App extends Component {
     return (
       <BrowserRouter>
       <Switch>
-        <Route path="/" component={ Header } />
+        <Route path="/" component={ Home } />
       </Switch>
       </BrowserRouter>
     );

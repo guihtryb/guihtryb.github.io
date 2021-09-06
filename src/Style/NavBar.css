@@ -1,6 +1,10 @@
 .navbar-container {
   background-color: #40916C;
-  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 2);
+  position: fixed !important;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 .welcome-text {
@@ -10,18 +14,24 @@
 
 
 .nav-link {
-  width: 97px;
-  text-align: center;
-  margin: 5px 15px;
   border-radius: 6px;
+  margin: 0 25px;
+  text-align: center;
+  width:  fit-content;
+}
+
+
+.nav-link span {
+  align-self: center;
 }
 
 .nav-link:hover {
   background: aqua;
-  font-weight: 700;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  width: 120px;
-  transition: 1s;
+  font-weight: 700;
+  transition: 0.1s;
+  border: 2px solid black;
+  width: calc(20% + 20px);
 }
 
 
@@ -32,11 +42,11 @@
 
 .nav-link:after {
   content: '»';
-  display: inline-block;
   opacity: 0;
-  font-size: 18px;
+  display: inline-flex;
   margin-left: 10px;
-  transition: 0.3s;
+  font-size: 18px;
+  transition: 0.2s;
   transform: rotate(90deg); 
 }
 
@@ -48,6 +58,23 @@
 
 @media only screen and (min-width : 990px) {
   #basic-navbar-nav {
-    margin-left: 47%;
+    margin-left: 35%;
   }
+  .nav-link {
+    display: inline-block;
+    border-radius: 6px;
+    margin: 0 28px;
+    text-align: center;
+    min-width:  120px;
+    height: fit-content;
+  }  
+
+  .nav-link:hover {
+    background: aqua;
+    font-weight: 700;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: calc( 20% + 90px);
+    transition: 0.1s;
+  }
+  
 }
