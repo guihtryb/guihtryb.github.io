@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 const skills = ['ReactJS','RTL','Redux','JavaScript','Bootstrap','Jest','HTML5','CSS3','Git & GitHub'];
 
 function scrollToProjects() {
-  window.scrollTo(0, 1690);
+    window.scrollTo(0, 1660);
 }
 
 const About = () => {

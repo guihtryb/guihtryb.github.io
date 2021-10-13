@@ -9,23 +9,23 @@
 }
 
 .gitIcon {
-  font-size: 80px;
+  font-size: 90px;
   color: white;
 }
 
 .gitIcon:hover {
+  transition: 1.2s;
   color: black;
-  transition: 2s;
 }
 
 .linkedinIcon {
-  font-size: 80px;
+  font-size: 90px;
   color: white;
 }
 
 .linkedinIcon:hover {
   color: #0e76a8;
-  transition: 2s;
+  transition: 1.2s;
 }
 
 

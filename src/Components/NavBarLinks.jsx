@@ -11,7 +11,7 @@ export default class NavBarLinks extends Component {
   }
 
   scrollToProjects() {
-    window.scrollTo(0, 1690);
+    window.scrollTo(0, 1660);
   }
 
   scrollToContact() {
