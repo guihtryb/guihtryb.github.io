@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: fit-content;
   color: white;
   background: linear-gradient(to top,  #066aff, #171717);
 }
@@ -33,24 +32,32 @@
 
 .right-arrow {
   position: absolute;
-  top: 46%;
-  right: 975px;
+  top: 44%;
+  right: 995px;
   font-size: 3rem;
   z-index: 10;
-  color: #000000;
+  color: #1f1d1d;
   cursor: pointer;
   user-select: none;
 }
 
 .left-arrow {
   position: absolute;
-  top: 47%;
-  left: 975px;
+  top: 45%;
+  left: 995px;
   font-size: 3rem;
   z-index: 10;
-  color: #000000;
+  color: #161616;
   cursor: pointer;
   user-select: none;
+}
+
+.left-arrow:hover {
+  color: black;
+}
+
+.right-arrow:hover {
+  color: black;
 }
 
 .project-box {
@@ -65,7 +72,7 @@
   margin: 0 60px;
 }
 
-.project-image{
+.project-image {
   background-color: #3a3c41;
   border: 2px solid #0184ff;
   height: 340px;
@@ -101,6 +108,7 @@
 
 .project-skill:hover {
   background-color: #007dfa;
+  box-shadow: 2px 15px 50px black;
   transition: 0.8s !important;
 }
 

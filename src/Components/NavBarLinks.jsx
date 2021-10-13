@@ -10,6 +10,14 @@ export default class NavBarLinks extends Component {
   window.scrollTo(0, 940);
   }
 
+  scrollToProjects() {
+    window.scrollTo(0, 1690);
+  }
+
+  scrollToContact() {
+    window.scrollTo(0, 2280);
+  }
+  
   render() {
     return (
       <div>
@@ -18,8 +26,8 @@ export default class NavBarLinks extends Component {
         </div>
       <Nav className="me-auto" >
         <Nav.Link onClick={this.scrollToAbout} id="About" className="nav-link"><span>About</span></Nav.Link>
-        <Nav.Link href="#projects" id="Projects" className="nav-link"><span>Projects</span></Nav.Link>
-        <Nav.Link href="#contact" id="Contact" className="nav-link"><span>Contact</span></Nav.Link>
+        <Nav.Link onClick={this.scrollToProjects} id="Projects" className="nav-link"><span>Projects</span></Nav.Link>
+        <Nav.Link className="nav-link" onClick={ this.scrollToContact }><span>Contact</span></Nav.Link>
       </Nav>
       </div>
     );

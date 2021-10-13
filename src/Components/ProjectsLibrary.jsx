@@ -28,8 +28,8 @@ const ProjectsLibrary = () => {
         <div className="projects-bar"></div>
       </div>
       <div className="slider">
-      <FaArrowCircleLeft className="right-arrow"  onClick={ nextSlide }/>
       <FaArrowCircleRight className="left-arrow" onClick={ prevSlide } />
+      <FaArrowCircleLeft className="right-arrow"  onClick={ nextSlide }/>
     { projectsData.map(({ name, description, skills, repoLink, video }, index) => (
       <div className={ index === current ? 'slide active' : 'slide'} key={ name }>
         { index === current && (
@@ -45,9 +45,9 @@ const ProjectsLibrary = () => {
           </p>
       { skills.map((skill) => <button className="project-skill" key={skill} > {skill} </button> ) }
         <hr className="hr-link"/>
-        <span className="repo-link"> Link to repo: 👉 <a href={repoLink} target="_blank" rel="noreferrer">{ repoLink }</a></span>
+          <span className="repo-link"> Link to repo: 👉 <a href={repoLink} target="_blank" rel="noreferrer">{ repoLink }</a></span>
         </div>
-        </div>
+      </div>
         )}
       </div>
       ))}
