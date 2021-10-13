@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import '../Style/Main.css'
-import ProjectsLibrary from './ProjectsLibrary';
 import Profile from '../Images/Profile.jpeg';
 import Aos from 'aos';
-import { Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+import About from './About';
 
 
 function scrollToAbout() {
@@ -44,7 +44,7 @@ export function Main() {
     return (
       <main className="main-content">
         { AboutIntroductionSection() }
-        <ProjectsLibrary />
+        <About />
       </main>
     );
   };

@@ -1,4 +1,5 @@
 .main-content { 
+  height: 260vh;
   color: white;
 }
 
@@ -102,7 +103,7 @@
   .shadow {
     position: absolute;
     top: 107%;
-    height: 290px;
+    height: 270px;
     width: 100%;
     left: 0;
     z-index: 2;
