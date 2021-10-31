@@ -1,22 +1,15 @@
-import React, { useEffect } from 'react';
-import Aos from 'aos';
+import React from 'react';
 import '../Style/About.css';
 import { Button } from 'react-bootstrap';
 
 const skills = ['ReactJS','RTL','Redux','JavaScript','Bootstrap','Jest','HTML5','CSS3','Git & GitHub'];
 
-function scrollToProjects() {
-    window.scrollTo(0, 1660);
-}
-
 const About = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
   return (
     <section className="about-me-section">
+        <div id="about"></div>
         <div className="about-title" data-aos="fade-up">
-        <h2 id="about">About</h2>
+        <h2>About</h2>
         <div className="about-bar"></div>
         </div>
       <article className="about-me-content" data-aos="fade-up">

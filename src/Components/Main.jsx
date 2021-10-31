@@ -9,9 +9,13 @@ function AboutIntroductionSection() {
   return (
     <section className="about-section">
         <div className="content">
-          <h1 id="intro" data-aos="fade-right">
+          <div className="welcome-content">
+          <h1 id="intro" data-aos="fade-left">
             Be Welcome!👋
           </h1>
+        <div className="welcome-bar" data-aos="fade-right"></div>
+          </div>
+          <div className="apresentation">
           <p className="description" data-aos="fade-left"> 
             <span className="name">Guilherme Viana</span> Here. 
             <br/>
@@ -20,9 +24,8 @@ function AboutIntroductionSection() {
             studying nowadays at <strong><a className="trybe-link" href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe!</a></strong>
           </p>
           <img src={ Profile } data-aos="fade-left" alt="profile" className="profile" />
-          <div className="find-out-box" data-aos="fade-up">
-            <a href="#about"><Button className="find-out-btn"> Find out more </Button></a>
           </div>
+            <a href="#about"><Button className="find-out-btn"> Find out more </Button></a>
         </div> 
       <div className="shadow"></div>
     </section>

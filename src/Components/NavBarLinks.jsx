@@ -20,7 +20,7 @@ export default class NavBarLinks extends Component {
   
   render() {
     return (
-      <div>
+      <div className="teste">
       <a href="#intro"><button id="name">GuilhermeViana</button></a>
       <Nav className="me-auto" >
         <Nav.Link href="#about" className="nav-link"><span>About</span></Nav.Link>

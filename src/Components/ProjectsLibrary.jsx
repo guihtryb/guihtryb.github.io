@@ -22,14 +22,17 @@ const ProjectsLibrary = () => {
   }
 
   return (
-    <section id="projects" className='project-library'>
+    <section className='project-library'>
+        <div id="projects"></div>
       <div className="projects-title" data-aos="fade-up">
         <h2>Projects</h2>
         <div className="projects-bar"></div>
       </div>
       <div className="slider" data-aos="fade-up" data-aos-duration="2600">
+     <div className="arrows-container">
       <FaArrowCircleLeft className="left-arrow"  onClick={ nextSlide }/>
       <FaArrowCircleRight className="right-arrow" onClick={ prevSlide } />
+     </div>
     { projectsData.map(({ name, description, skills, repoLink, video }, index) => (
       <div className={ index === current ? 'slide active' : 'slide'} key={ name }>
         { index === current && (
