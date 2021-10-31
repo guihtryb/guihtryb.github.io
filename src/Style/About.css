@@ -1,4 +1,4 @@
-.about-me-section {
+/* .about-me-section {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -85,4 +85,82 @@ align-items: center;
   top: 50px;
   margin-left: 10px;
   transform: rotate(90deg); 
+} */
+
+@media (min-width : 320px) {
+  .about-me-section {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 50vh;
+    position: relative;
+  }
+
+  .about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-bar {
+    background-color: #ff8206;
+    margin: 2px 0;
+    padding: 4px;
+    width: 100px;
+  }
+
+  .about-me-content {
+    font-size: 18px;
+    margin: 0 25px;
+  }
+
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+    .skills-bar {
+      background-color: #ff8206;
+      margin: 0;
+      padding: 4px;
+      width: 95px;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background-color: #3570ac;
+      padding: 9px;
+      border-radius: 22px;
+      margin: 5px;
+      border: none;
+      color: white;
+    }
+
+    .skill:hover {
+      background-color: #1483f1;
+    }
+
+    .projects-btn {
+      font-size: 20px !important;
+      border-radius: 25px !important;
+      height: 60px;
+      width: 140px;
+      position: relative;
+      top: 25px;
+    }
 }

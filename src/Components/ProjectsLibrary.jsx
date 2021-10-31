@@ -22,14 +22,14 @@ const ProjectsLibrary = () => {
   }
 
   return (
-    <section className='project-library'>
+    <section id="projects" className='project-library'>
       <div className="projects-title" data-aos="fade-up">
         <h2>Projects</h2>
         <div className="projects-bar"></div>
       </div>
-      <div className="slider">
-      <FaArrowCircleRight className="left-arrow" onClick={ prevSlide } />
-      <FaArrowCircleLeft className="right-arrow"  onClick={ nextSlide }/>
+      <div className="slider" data-aos="fade-up" data-aos-duration="2600">
+      <FaArrowCircleLeft className="left-arrow"  onClick={ nextSlide }/>
+      <FaArrowCircleRight className="right-arrow" onClick={ prevSlide } />
     { projectsData.map(({ name, description, skills, repoLink, video }, index) => (
       <div className={ index === current ? 'slide active' : 'slide'} key={ name }>
         { index === current && (
@@ -43,7 +43,9 @@ const ProjectsLibrary = () => {
           <p className="project-description">
             { description }
           </p>
+          <div className="skills-container">
       { skills.map((skill) => <button className="project-skill" key={skill} > {skill} </button> ) }
+          </div>
         <hr className="hr-link"/>
           <span className="repo-link"> Link to repo: 👉 <a href={repoLink} target="_blank" rel="noreferrer">{ repoLink }</a></span>
         </div>

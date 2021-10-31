@@ -1,4 +1,4 @@
-.main-content { 
+/* .main-content { 
   height: 260vh;
   color: white;
 }
@@ -146,4 +146,48 @@
   .div-box {
     height: 130px;
   }
+} */
+
+
+@media (min-width : 320px) {
+  .main-content { 
+    color: white;
+  }
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 27vh;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../Images/Background4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background: linear-gradient(to top, #151515, tranparent);
+    overflow: hidden !important;
+    margin: 36px 0px;
+  }
+
+  .shadow {
+    position: absolute;
+    top: 41%;
+    height: 145px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to top, #151515, transparent);
+  }
+  
 }

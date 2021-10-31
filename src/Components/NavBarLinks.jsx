@@ -21,13 +21,11 @@ export default class NavBarLinks extends Component {
   render() {
     return (
       <div>
-        <div id="name-box">
-      <button id="name" onClick={this.scrollToIntro}>GuilhermeViana</button>
-        </div>
+      <a href="#intro"><button id="name">GuilhermeViana</button></a>
       <Nav className="me-auto" >
-        <Nav.Link onClick={this.scrollToAbout} id="About" className="nav-link"><span>About</span></Nav.Link>
-        <Nav.Link onClick={this.scrollToProjects} id="Projects" className="nav-link"><span>Projects</span></Nav.Link>
-        <Nav.Link className="nav-link" onClick={ this.scrollToContact }><span>Contact</span></Nav.Link>
+        <Nav.Link href="#about" className="nav-link"><span>About</span></Nav.Link>
+        <Nav.Link href="#projects" className="nav-link"><span>Projects</span></Nav.Link>
+        <Nav.Link href="#contact" className="nav-link"><span>Contact</span></Nav.Link>
       </Nav>
       </div>
     );

@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section className="about-me-section">
         <div className="about-title" data-aos="fade-up">
-        <h2>About</h2>
+        <h2 id="about">About</h2>
         <div className="about-bar"></div>
         </div>
       <article className="about-me-content" data-aos="fade-up">
@@ -31,7 +31,7 @@ const About = () => {
       <div className="skills-container">
         { skills.map((skill) => <button className="skill" key={skill} data-aos="fade-up" data-aos-duration="2600"> {skill} </button> ) }
       </div>
-      <Button className="projects-btn" onClick={ scrollToProjects } data-aos="fade-up"> Projects </Button>
+      <a href="#projects"><Button className="projects-btn" data-aos="fade-up"> Projects </Button></a>
       </section>
     </section>
   );

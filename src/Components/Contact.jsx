@@ -9,8 +9,8 @@ const Contact = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section className="contact-me-section">
-      <div className="contact-title" data-aos="fade-up">
+    <section id="contact" className="contact-me-section">
+      <div className="contact-title">
         <h2>Contact</h2>
           <div className="contact-bar"></div>
         <div className="contact-items">
