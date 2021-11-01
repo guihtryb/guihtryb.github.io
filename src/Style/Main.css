@@ -77,9 +77,9 @@
     background: linear-gradient(to top, #151515, transparent);
   }
 
-@media (min-height : 999px) {
+@media (min-height : 1049px) {
   .shadow {
-    top: 86%;
+    top: 88%;
   }
 }
 
