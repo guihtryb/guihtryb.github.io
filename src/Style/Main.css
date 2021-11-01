@@ -3,8 +3,8 @@
   }
 
   .content{
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     height: 74vh;
     justify-content: space-around;
@@ -69,22 +69,17 @@
 
   .shadow {
     position: absolute;
-    top: 82%;
     height: 145px;
     width: 100%;
-    left: 0;
+    align-self: flex-end;
     z-index: 2;
     background: linear-gradient(to top, #151515, transparent);
   }
 
 @media (min-height : 1049px) {
-  /* .shadow {
-    top: 88%;
-  } */
   .about-section {
     height: 88vh;
   }
-
 }
 
 @media screen and (min-width : 600px) and (max-width : 990px) {
