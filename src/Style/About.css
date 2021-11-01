@@ -98,4 +98,55 @@
 
 }
 
-@media screen and (min-width : 991) {}
+@media screen and (min-width : 991px) {
+  #about {
+    height: 10.5vh;
+  }
+
+  .about-me-content {
+    font-size: 23px;
+    margin: 0 45px;
+  }
+
+  .about-me-section {
+    justify-content: space-between;
+    margin: 0 35px;
+  }
+
+  .about-title h2 {
+    font-size: 36px;
+  }
+
+  .about-bar {
+    width: 160px;
+  }
+
+  .skill {
+    font-size: 22px;
+    padding: 14px;
+    margin: 7px;
+  }
+
+  .projects-btn {
+    font-size: 25px !important;
+    border-radius: 25px !important;
+    height: 70px;
+    width: 160px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .skills-section {
+    justify-content: space-between;
+    height: 46vh;
+  }
+
+  .skills-title h2 {
+    font-size: 36px;
+  }
+
+  .skills-bar {
+    width: 110px;
+  }
+
+}

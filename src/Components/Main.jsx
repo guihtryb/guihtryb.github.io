@@ -10,7 +10,7 @@ function AboutIntroductionSection() {
     <section className="about-section">
         <div className="content">
           <div className="welcome-content">
-          <h1 id="intro" data-aos="fade-left">
+          <h1 data-aos="fade-left">
             Be Welcome!👋
           </h1>
         <div className="welcome-bar" data-aos="fade-right"></div>

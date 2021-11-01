@@ -5,7 +5,7 @@ import NavBarContent from './NavBarContent';
 export default class Header extends Component {
   render() {
     return (
-      <header>
+      <header id="intro">
         <NavBarContent />
       </header>
     );

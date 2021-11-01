@@ -55,7 +55,6 @@
     justify-content: space-around;
     align-items: center;
   } 
-/* } */
 
 @media screen and (min-width : 600px) and (max-width : 990px) {
   .contact-items {
@@ -64,5 +63,18 @@
   }
 }
 
-@media screen and (min-width : 991) {}
+@media screen and (min-width : 991px) {
+  .contact-items {
+    height: 25vh;
+    width: 80vh;
+  }
+
+  .contact-title h2 {
+    font-size: 40px;
+  }
+
+  .contact-bar {
+    width: 200px;
+  }
+}
 

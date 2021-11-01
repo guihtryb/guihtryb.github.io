@@ -173,5 +173,83 @@
   }
 }
 
-@media screen and (min-width : 991) {}
+@media screen and (min-width : 991px) {
+  #projects {
+    height: 15vh;
+  }
+
+  .project-box {
+    width: 800px;
+    height: 500px;
+    flex-direction: row;
+  }
+
+  .projects-title h2 {
+    font-size: 40px;
+  }
+
+  .projects-bar {
+    width: 180px;
+  }
+
+  .projects-title{
+    margin-bottom: 30px;
+  }
+
+  .project-name {
+    margin: 20px 60px;
+  }
+
+  .project-image {
+    height: 205px;
+    width: 370px;
+  }
+
+  .hr-link {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .arrows-container {
+    width: calc(100% + 160px);
+  }
+
+  .left-arrow {
+    font-size: 4.5rem;
+  }
+
+  .right-arrow {
+    font-size: 4.5rem;
+  }
+
+  .project-description {
+    font-size: 19px;
+    margin-left: 15px;
+  }
+
+  .project-skill {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .skills-container{
+    margin-left: 25px;
+  }
+
+  .repo-link {
+    margin-left: 15px;
+    font-size: 17px;
+  }
+
+  .project-infos {
+    /* border: 2px solid wheat; */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 

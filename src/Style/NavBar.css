@@ -61,8 +61,18 @@
   header {
     font-size: 22px;
   }
+
   .me-auto {
     padding: 8px 0;
+    width: 100vh;
+    justify-self: flex-end !important;
+  }
+
+  .teste {
+    width: 125vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
 }

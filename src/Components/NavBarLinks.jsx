@@ -1,23 +1,7 @@
 import React, { Component } from 'react';
 import { Nav } from 'react-bootstrap';
 export default class NavBarLinks extends Component {
-  
-  scrollToIntro() {
-  window.scrollTo(0, 65);
-  }
 
-  scrollToAbout() {
-  window.scrollTo(0, 940);
-  }
-
-  scrollToProjects() {
-    window.scrollTo(0, 1660);
-  }
-
-  scrollToContact() {
-    window.scrollTo(0, 2280);
-  }
-  
   render() {
     return (
       <div className="teste">

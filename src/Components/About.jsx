@@ -24,7 +24,7 @@ const About = () => {
       <div className="skills-container">
         { skills.map((skill) => <button className="skill" key={skill} data-aos="fade-up" data-aos-duration="2600"> {skill} </button> ) }
       </div>
-      <a href="#projects"><Button className="projects-btn" data-aos="fade-up"> Projects </Button></a>
+      <a href="#projects"><Button className="projects-btn" data-aos="fade-up" data-aos-duration="3200"> Projects </Button></a>
       </section>
     </section>
   );
