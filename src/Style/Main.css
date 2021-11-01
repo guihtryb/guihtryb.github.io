@@ -78,9 +78,13 @@
   }
 
 @media (min-height : 1049px) {
-  .shadow {
+  /* .shadow {
     top: 88%;
+  } */
+  .about-section {
+    height: 88vh;
   }
+
 }
 
 @media screen and (min-width : 600px) and (max-width : 990px) {
