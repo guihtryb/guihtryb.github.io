@@ -100,7 +100,7 @@
 
 @media screen and (min-width : 991px) {
   #about {
-    height: 10.5vh;
+    height: 13.5vh;
   }
 
   .about-me-content {
@@ -115,6 +115,10 @@
 
   .about-title h2 {
     font-size: 36px;
+  }
+
+  .about-title {
+    margin-bottom: 15px;
   }
 
   .about-bar {

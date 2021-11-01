@@ -175,12 +175,12 @@
 
 @media screen and (min-width : 991px) {
   #projects {
-    height: 15vh;
+    height: 12vh;
   }
 
   .project-box {
     width: 800px;
-    height: 500px;
+    height: 520px;
     flex-direction: row;
   }
 
@@ -245,8 +245,6 @@
   }
 
   .project-infos {
-    /* border: 2px solid wheat; */
-    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
