@@ -65,6 +65,8 @@
     height: 70px;
     font-size: 20px !important;
     width: 170px;
+    z-index: 3;
+    position: relative;
   }
 
   .shadow {
