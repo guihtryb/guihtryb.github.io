@@ -5,7 +5,7 @@ import '../Style/Projects.css'
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import projectsData from '../Data/ProjectsData';
 
-const ProjectsLibrary = () => {
+export default function ProjectsLibrary() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -60,5 +60,3 @@ const ProjectsLibrary = () => {
   </section>
   )
 }
-
-export default ProjectsLibrary;

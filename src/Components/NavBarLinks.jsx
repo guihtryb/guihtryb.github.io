@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Nav } from 'react-bootstrap';
-export default class NavBarLinks extends Component {
 
-  render() {
+export default function NavBarLinks () {
+
     return (
       <div className="teste">
       <a href="#intro"><button id="name">GuilhermeViana</button></a>
@@ -13,5 +13,4 @@ export default class NavBarLinks extends Component {
       </Nav>
       </div>
     );
-  };
 }

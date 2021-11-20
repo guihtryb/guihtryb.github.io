@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 const skills = ['ReactJS','RTL','Redux','JavaScript','Bootstrap','Jest','HTML5','CSS3','Git & GitHub'];
 
-const About = () => {
+export default function MoreAbout() {
   return (
     <section className="about-me-section">
         <div id="about"></div>
@@ -29,5 +29,3 @@ const About = () => {
     </section>
   );
 }
-
-export default About;

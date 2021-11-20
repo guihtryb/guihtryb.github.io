@@ -4,7 +4,7 @@ import Aos from 'aos';
 import '../Style/Contact.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const Contact = () => {
+export default function Contact()  {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -21,5 +21,3 @@ const Contact = () => {
     </section>
   );
 }
-
-export default Contact;

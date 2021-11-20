@@ -1,15 +1,13 @@
 import Home from './Pages/Home';
-import React, { Component } from 'react';
+import React from 'react';
 import Provider from './Context/AppProvider';
 
-class  App extends Component {
-  render() {
+function  App() {
     return (
       <Provider>
         <Home />
       </Provider>
     );
-  }
 }
 
 export default App;

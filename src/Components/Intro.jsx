@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 import About from './About';
 
 
-function AboutIntroductionSection() {
+export default function Intro() {
   return (
     <section className="about-section">
         <div className="content">
@@ -29,13 +29,3 @@ function AboutIntroductionSection() {
     </section>
   );
 }
-
-export function Main() {
-    return (
-      <main className="main-content">
-        { AboutIntroductionSection() }
-        <About />
-      </main>
-    );
-  };
-
