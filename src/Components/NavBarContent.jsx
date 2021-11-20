@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Navbar} from 'react-bootstrap';
 import '../Style/NavBar.css'
-import '../App.css'
 import NavBarLinks from './NavBarLinks';
 
 export default class NavBarContent extends Component {

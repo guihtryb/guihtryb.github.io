@@ -19,9 +19,7 @@ function AboutIntroductionSection() {
           <p className="description" data-aos="fade-left"> 
             <span className="name">Guilherme Viana</span> Here. 
             <br/>
-            I'm a Full-Stack Web Developer,
-            <br/>
-            studying nowadays at <strong><a className="trybe-link" href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe!</a></strong>
+            I'm a Full-Stack Web Developer | <strong><a className="trybe-link" href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe!</a></strong>
           </p>
           <img src={ Profile } data-aos="fade-left" alt="profile" className="profile" />
           </div>

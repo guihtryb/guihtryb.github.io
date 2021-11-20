@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { useContext } from 'react'
+import AppContext from '../Context/AppContext';
 import NavBarContent from './NavBarContent';
 
 
-export default class Header extends Component {
-  render() {
+export default function Header() {
+  const { scrolled } = useContext(AppContext);
     return (
-      <header id="intro">
+      <header id="intro" style={ scrolled ? { opacity:  1 } : { opacity:  0 } }>
         <NavBarContent />
       </header>
     );
-  };
 }

@@ -41,8 +41,8 @@ const ProjectsLibrary = () => {
             <source src={ video } type="video/mp4"/>
           </video>
         <div className="project-infos">
+          <hr className="divisor"/>
           <h2 className="project-name">{ name }</h2>
-          <hr />
           <p className="project-description">
             { description }
           </p>
