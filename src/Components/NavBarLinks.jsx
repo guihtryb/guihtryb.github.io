@@ -4,13 +4,15 @@ import { Nav } from 'react-bootstrap';
 export default function NavBarLinks () {
 
     return (
-      <div className="teste">
-      <a href="#intro"><button id="name">GuilhermeViana</button></a>
-      <Nav className="me-auto" >
-        <Nav.Link href="#about" className="nav-link"><span>About</span></Nav.Link>
-        <Nav.Link href="#projects" className="nav-link"><span>Projects</span></Nav.Link>
-        <Nav.Link href="#contact" className="nav-link"><span>Contact</span></Nav.Link>
-      </Nav>
+    <div className="navbar-links-container">
+      <div className="navbar-name-container">
+      <a href="#intro" className="navbar-name">GuilhermeViana</a>
       </div>
+      <Nav className="me-auto" >
+        <Nav.Link href="#intro" className="navbar-link"><span>About</span></Nav.Link>
+        <Nav.Link href="#projects" className="navbar-link"><span>Projects</span></Nav.Link>
+        <Nav.Link href="#contact" className="navbar-link"><span>Contact</span></Nav.Link>
+      </Nav>
+    </div>
     );
 }

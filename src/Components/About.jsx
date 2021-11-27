@@ -6,8 +6,7 @@ const skills = ['ReactJS','RTL','Redux','JavaScript','Bootstrap','Jest','HTML5',
 
 export default function MoreAbout() {
   return (
-    <section className="about-me-section">
-        <div id="about"></div>
+    <section className="about-me-section" id="about">
         <div className="about-title" data-aos="fade-up">
         <h2>About</h2>
         <div className="about-bar"></div>
