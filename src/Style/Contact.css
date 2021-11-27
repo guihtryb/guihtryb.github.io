@@ -1,47 +1,71 @@
 /* @media screen and (max-width : 600px) { */
-  .contact-me-section {
-    color: white;
-    align-items: center;
-    display: flex;
-    height: 99vh;
-    flex-direction: column;
-    justify-content: space-between;
-    background: linear-gradient(to top, #171717, #066aff);
-  }
+.contact-section {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(to top, #171717, #066aff);
+}
+
+.contact-container {
+  display: flex;
+  height: 58.5vw;
+  margin: auto 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
   .contact-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 235px;
+  }
+
+  .contact-title h2{
+    font-size: 9.5vw;
   }
 
   .contact-bar {
     background-color: black;
-    padding: 4px;
-    width: 120px;
+    padding: 3.5px;
+    width: 37.5vw;
   }
 
   .gitIcon {
-    font-size: 90px;
+    transition: all ease 0.3s !important;
+    font-size: 16.5vh;
     color: white;
   }
 
   .gitIcon:hover {
-    transition: 1.2s;
     color: black;
   }
 
   .linkedinIcon {
-    font-size: 90px;
+    font-size: 16.5vh;
     color: white;
+    transition: all ease 0.3s !important;
   }
 
   .linkedinIcon:hover {
     color: #0e76a8;
-    transition: 1.2s;
   }
+
+  .contact-links {
+    width: 39vh;
+    display: flex;
+    justify-content: space-between;
+  } 
+
+/* 
+
+
+
+
 
   .contact-items {
     display: flex;
@@ -77,4 +101,4 @@
     width: 200px;
   }
 }
-
+ */
