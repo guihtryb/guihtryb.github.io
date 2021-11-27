@@ -3,7 +3,6 @@ import '../Style/Main.css'
 import Profile from '../Images/Profile.jpeg';
 import { Button } from 'react-bootstrap';
 
-
 export default function Intro() {
   return (
     <section className="initial-section">
