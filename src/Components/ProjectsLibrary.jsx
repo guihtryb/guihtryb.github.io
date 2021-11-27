@@ -22,41 +22,39 @@ export default function ProjectsLibrary() {
   }
 
   return (
-    <section className='project-library'>
-        <div id="projects"></div>
-      <div className="projects-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <div className="projects-bar"></div>
-      </div>
-      <div className="slider" data-aos="fade-up" data-aos-duration="2600">
-     <div className="arrows-container">
-      <FaArrowCircleLeft className="left-arrow"  onClick={ nextSlide }/>
-      <FaArrowCircleRight className="right-arrow" onClick={ prevSlide } />
-     </div>
-    { projectsData.map(({ name, description, skills, repoLink, video }, index) => (
-      <div className={ index === current ? 'slide active' : 'slide'} key={ name }>
-        { index === current && (
-        <div className="project-box" key={ index }>
-          <video className="project-image" controls>
-            <source src={ video } type="video/mp4"/>
-          </video>
-        <div className="project-infos">
-          <hr className="divisor"/>
-          <h2 className="project-name">{ name }</h2>
-          <p className="project-description">
-            { description }
-          </p>
-          <div className="skills-container">
-      { skills.map((skill) => <button className="project-skill" key={skill} > {skill} </button> ) }
+    <section id="projects" className='projects-section'>
+      <div className="projects-container">
+        <div className="projects-title-container" data-aos="fade-up">
+          <h2>Projects</h2>
+          <div className="projects-bar"></div>
+        </div>
+        <div className="projects-slider" data-aos="fade-up" data-aos-duration="2600">
+          <div className="arrows-container">
+            <FaArrowCircleLeft className="left-arrow"  onClick={ nextSlide }/>
+            <FaArrowCircleRight className="right-arrow" onClick={ prevSlide } />
           </div>
-        <hr className="hr-link"/>
-          <span className="repo-link"> Link to repo: 👉 <a href={repoLink} target="_blank" rel="noreferrer">{ repoLink }</a></span>
+          { projectsData.map(({ name, description, skills, repoLink, video }, index) => (
+            <div className={ index === current ? 'slide active' : 'slide'} key={ name }>
+          { index === current && (
+          <div className="projects-box" key={ index }>
+            <div className="projects-video-and-name-container">
+              <video className="projects-video" controls>
+              <source src={ video } type="video/mp4"/>
+              </video>
+                <h2 className="projects-name">{ name }</h2>
+            </div>
+            <p className="projects-description">
+            { description }
+            </p>
+            <div className="projects-skills-container">
+            { skills.map((skill) => <button className="project-skill" key={skill} > {skill} </button> ) }
+            </div>
+          </div>
+          )}
+          </div>
+          ))} 
         </div>
       </div>
-        )}
-      </div>
-      ))}
-      </div>
-  </section>
+    </section>
   )
 }

@@ -19,7 +19,7 @@ const projectsData = [
   },
   {
     name: 'Automated Tests with React Router Library',
-    description: 'In this project I was responsible to use the RTL queries to test inputs, asynchronous flows, simulate user events and create APIs mocks and ensure 100% of coverage',
+    description: 'I use the RTL` queries to test inputs, asynchronous flows, simulate user events and create APIs mocks and ensure 100% of coverage',
     skills: ['JavaScript', 'ReactJS', 'Redux', 'RTL', 'Git & GitHub'],
     repoLink: 'https://github.com/guihtryb/sd-013-b-project-react-testing-library',
     video: pokeRTL,
