@@ -1,31 +1,79 @@
 import React from 'react';
 import '../Style/About.css';
-import { Button } from 'react-bootstrap';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
-const skills = ['ReactJS','RTL','Redux','JavaScript','Bootstrap','Jest','HTML5','CSS3','Git & GitHub'];
+const skills = [
+  {
+  stack: 'ReactJS',
+  type: 'front-end',
+  },
+  {
+  stack: 'RTL',
+  type: 'front-end',
+  },
+  {
+    stack: 'Redux',
+    type: 'front-end',
+  },
+  {
+    stack: 'JavaScript',
+    type: 'front-end',
+  },
+  {
+    stack: 'Jest',
+    type: 'front-end',
+  },
+  {
+    stack: 'HTML5',
+    type: 'front-end',
+  },
+  {
+    stack: 'CSS3',
+    type: 'front-end',
+  },
+  {
+    stack: 'Git & GitHub',
+    type: '',
+  },
+  {
+    stack: 'SQL',
+    type: 'back-end',
+  },
+  {
+    stack: 'Docker',
+    type: 'back-end',
+  },
+];
 
 export default function MoreAbout() {
   return (
-    <section className="about-me-section">
-        <div id="about"></div>
-        <div className="about-title" data-aos="fade-up">
+    <section className="about-section" id="about">
+        <div className="shadow-top"></div>
+      <div className="about-container">
+      <div className="about-title-container" data-aos="fade-right">
         <h2>About</h2>
         <div className="about-bar"></div>
         </div>
-      <article className="about-me-content" data-aos="fade-up">
+      <article className="about-content" data-aos="fade-right">
         I am a passionate person about learning new things and accept new challenges,
-        which matches with what I consider to be one of my best qualities: the <strong> constant search </strong> for new technology content combined with <strong> immersion </strong> and <strong> practice</strong>.
+        which matches with what I consider to be one of my best qualities: the <strong><i> constant search </i></strong> for new technology content combined with <strong><i> immersion </i></strong> and <strong><i> practice </i></strong>.
       </article>
       <section className="skills-section">
-      <div className="skills-title" data-aos="fade-up">
+      <div className="skills-title" data-aos="fade-right">
         <h2>Skills</h2>
         <div className="skills-bar"></div>
       </div>
       <div className="skills-container">
-        { skills.map((skill) => <button className="skill" key={skill} data-aos="fade-up" data-aos-duration="2600"> {skill} </button> ) }
+        { skills.map((skill) => <button className={`skill ${skill.type}`} key={skill.stack}> {skill.stack} </button> ) }
       </div>
-      <a href="#projects"><Button className="projects-btn" data-aos="fade-up" data-aos-duration="3200"> Projects </Button></a>
       </section>
+      <a href="#projects" className="skills-arrow-container">
+        <div >
+          <ArrowForwardIosIcon className="skills-arrow"/>
+        </div>
+      </a>
+      </div>
+      <div className="shadow"></div>
     </section>
   );
 }

@@ -1,117 +1,105 @@
-  .main-content { 
-    color: white;
-  }
+.initial-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('../Images/Background4.jpg');
+  background-size: cover;
+  height: 100vh;
+}
 
- .name:hover {
-  color: rgb(243, 175, 50);
- }
-
-  .content{
-    display: flex;
+.initial-container {
     align-items: center;
-    flex-direction: column;
-    height: 74vh;
-    justify-content: space-around;
-    margin: auto;
-    font-size: 22px;
-    font-weight: 800;
-  }
-
-  .welcome-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 83vh;
+    margin: auto 0;
     justify-content: space-around;
-    height: 9vh;
+}
+
+.name:hover {
+  color: rgb(238, 161, 18);
+  transition: all ease 0.3s;
+}
+
+.initial-welcome {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 9vh;
+}
+
+.welcome-bar {
+  background-color: #08277a;
+  padding: 4px;
+  width: 60vw;
+}
+
+.initial-description {
+  color: white;
+  text-shadow:  2px 7px 15px #151515;
+  font-weight: 700;
+  font-size: 6.5vw;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+.initial-description p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.profile {
+  display: none;
+  width: 190px;
+  align-self: flex-end;
+  border-radius: 12px;
+  box-shadow: 12px 10px 16px black
+}
+
+.find-out-btn {
+  border-radius: 25px !important;
+  height: 70px;
+  font-size: 20px !important;
+  width: 170px;
+  z-index: 3;
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  height: 180px;
+  width: 100%;
+  align-self: flex-end;
+  z-index: 2;
+  background: linear-gradient(to top, #151515, transparent);
+}
+
+@media screen and (min-width : 600px) { 
+
+  .initial-description { 
+    font-size: 5.5vw;
   }
 
   .welcome-bar {
-    background-color: #041b5a;
-    padding: 4px;
-    width: 230px;
+    width: 39vw;
+  }
+}
+
+@media screen and (min-width : 992px) { 
+
+  .welcome-bar {
+    width: 28vw;
   }
 
-  .description {
-    color: #ffffff;
-    text-shadow:  2px 7px 15px #151515;
-    height: 22vh;
-  }
-
-  .apresentation {
-    align-items: center;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-
-  .profile {
-    display: none;
-    width: 190px;
-    align-self: flex-end;
-    border-radius: 12px;
-    box-shadow: 12px 10px 16px black
-  }
-
-  .about-section {
-    display: flex;
-    justify-content: space-between;
-    background-image: url('../Images/Background4.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background: linear-gradient(to top, #151515, tranparent);
-    overflow: hidden !important;
+  .initial-description { 
+    font-size: 3.5vw;
   }
 
   .find-out-btn {
-    border-radius: 25px !important;
-    height: 70px;
-    font-size: 20px !important;
-    width: 170px;
-    z-index: 3;
-    position: relative;
-  }
-
-  .shadow {
-    position: absolute;
-    height: 145px;
-    width: 100%;
-    align-self: flex-end;
-    z-index: 2;
-    background: linear-gradient(to top, #151515, transparent);
-  }
-
-@media (min-height : 1049px) {
-  .about-section {
-    height: 88vh;
+    font-size: 2vw !important;
+    width: 17vw !important;
   }
 }
 
-@media screen and (min-width : 600px) and (max-width : 990px) {
-
-  .welcome-bar {
-    width: 290px;
-  }
-
-  .content {
-    font-size: 32px;
-  }
-
-}
-
-@media screen and (min-width : 991px) {
-  .description {
-    font-size: 38px;
-  }
-
-  .welcome-bar {
-    width: 305px;
-  }
-
-  .find-out-btn {
-    height: 10vh;
-    width: 30vh;
-    font-size: 24px !important;
-  }
-
-}

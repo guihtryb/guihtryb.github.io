@@ -1,156 +1,146 @@
-  #about {
-    height: 5vh;
-  }
-
-  .about-me-section {
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    position: relative;
-  }
-
-  .about-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-bar {
-    background-color: #ff8206;
-    margin: 2px 0;
-    padding: 4px;
-    width: 100px;
-  }
-
-  .about-me-content {
-    font-size: 18px;
-    margin: 20px 45px;
-  }
-
-  .skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 45vh;
-    justify-content: space-around;
-  }
-
-  .skills-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-    .skills-bar {
-      background-color: #ff8206;
-      margin: 0;
-      padding: 4px;
-      width: 95px;
-    }
-
-    .skills-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .skill {
-      background-color: #3570ac;
-      padding: 9px;
-      border-radius: 22px;
-      margin: 5px;
-      border: none;
-      color: white;
-    }
-
-    .skill:hover {
-      background-color: #007dfa;
-      box-shadow: 2px 15px 50px black;
-      transition: 0.8s !important;
-    }
-
-    .projects-btn {
-      font-size: 20px !important;
-      border-radius: 25px !important;
-      height: 60px;
-      width: 140px;
-    }
-
-@media screen and (min-width : 600px) and (max-width : 1200px) {
-  #about {
-    height: 1vh;
-  }
-
-  .about-me-section {
-    height: 95vh;
-  }
-
-  .about-me-content {
-    margin: 0 55px;
-    font-size: 20px;
-  }
-
-  .skill {
-    font-size: 20px;
-  }
-
+.about-section {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  background: url('../Images/Background2.jpg');
+  background-size: cover;
+  text-shadow: 1px 1px 8px black;
+  font-weight: 500;
 }
 
-@media screen and (min-width : 991px) {
-  #about {
-    height: 13.5vh;
+.shadow-top {
+  position: absolute;
+  top: 99.8vh;
+  height: 13.5vh;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, #151515, transparent);
+}
+
+.about-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 87vh;
+  justify-content: space-between;
+}
+
+.about-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-bar {
+  background-color: #ff8206;
+  margin: 2px 0;
+  padding: 4px;
+  width: 100px;
+}
+
+.about-content {
+  font-size: 18px;
+  width: 85vw;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 38vh;
+  justify-content: space-evenly;
+}
+
+.skills-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 1px 1px 8px black;
+}
+
+.skills-bar {
+  background-color: #ff8206;
+  margin: 0;
+  padding: 4px;
+  width: 95px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #3570ac;
+  padding: 9px;
+  border-radius: 22px;
+  margin: 5px;
+  border: none;
+  color: white;
+  position: relative;
+  z-index: 8;
+}
+
+.skill:hover {
+  background-color: #007dfa;
+  box-shadow: 2px 15px 50px black;
+  transition: 0.3s !important;
+}
+
+.front-end {
+  background-color: #35ac3f;
+}
+
+.front-end:hover {
+  background-color: #06bd15;
+}
+
+.back-end {
+  background-color: #7335ac;
+}
+
+.back-end:hover {
+  background-color: #6300c0;
+}
+
+.skills-arrow {
+  transform: rotate(90deg);
+}
+
+.skills-arrow-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.6;
+  padding-top: 2vh;
+  transition: all ease 0.3s;
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+
+.skills-arrow-container:hover {
+  opacity: 1;
+  color: white;
+}
+
+
+@media screen and ( min-width : 600px ) {
+  
+  h2 {
+    font-size: 31px !important;
+  }
+  
+  .about-content {
+    font-size: 25px;
   }
 
-  .about-me-content {
-    font-size: 23px;
-    margin: 0 45px;
-  }
-
-  .about-me-section {
-    justify-content: space-between;
-    margin: 0 35px;
-  }
-
-  .about-title h2 {
-    font-size: 36px;
-  }
-
-  .about-title {
-    margin-bottom: 15px;
-  }
-
-  .about-bar {
-    width: 160px;
-  }
-
-  .skill {
+  .skills-container {
     font-size: 22px;
-    padding: 14px;
-    margin: 7px;
   }
-
-  .projects-btn {
-    font-size: 25px !important;
-    border-radius: 25px !important;
-    height: 70px;
-    width: 160px;
-    position: relative;
-    bottom: 15px;
-  }
-
-  .skills-section {
-    justify-content: space-between;
-    height: 46vh;
-  }
-
-  .skills-title h2 {
-    font-size: 36px;
-  }
-
-  .skills-bar {
-    width: 110px;
-  }
-
 }
