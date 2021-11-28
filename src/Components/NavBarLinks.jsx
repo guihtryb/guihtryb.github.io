@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { Nav } from 'react-bootstrap';
 
 export default function NavBarLinks () {
