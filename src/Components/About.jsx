@@ -56,7 +56,7 @@ export default function MoreAbout() {
         </div>
       <article className="about-content" data-aos="fade-right">
         I am a passionate person about learning new things and accept new challenges,
-        which matches with what I consider to be one of my best qualities: the <strong> constant search </strong> for new technology content combined with <strong> immersion </strong> and <strong> practice</strong>.
+        which matches with what I consider to be one of my best qualities: the <strong><i> constant search </i></strong> for new technology content combined with <strong><i> immersion </i></strong> and <strong><i> practice </i></strong>.
       </article>
       <section className="skills-section">
       <div className="skills-title" data-aos="fade-right">

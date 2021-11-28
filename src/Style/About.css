@@ -13,7 +13,7 @@
 
 .shadow-top {
   position: absolute;
-  top: 100vh;
+  top: 99.8vh;
   height: 13.5vh;
   width: 100%;
   z-index: 2;
@@ -24,7 +24,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 89vh;
+  height: 87vh;
   justify-content: space-between;
 }
 
@@ -129,79 +129,18 @@
   color: white;
 }
 
-/* @media screen and (min-width : 600px) and (max-width : 1200px) {
-  #about {
-    height: 1vh;
+
+@media screen and ( min-width : 600px ) {
+  
+  h2 {
+    font-size: 31px !important;
+  }
+  
+  .about-content {
+    font-size: 25px;
   }
 
-  .about-me-section {
-    height: 95vh;
-  }
-
-  .about-me-content {
-    margin: 0 55px;
-    font-size: 20px;
-  }
-
-  .skill {
-    font-size: 20px;
-  }
-
-}
-
-@media screen and (min-width : 991px) {
-  #about {
-    height: 13.5vh;
-  }
-
-  .about-me-content {
-    font-size: 23px;
-    margin: 0 45px;
-  }
-
-  .about-me-section {
-    justify-content: space-between;
-    margin: 0 35px;
-  }
-
-  .about-title h2 {
-    font-size: 36px;
-  }
-
-  .about-title {
-    margin-bottom: 15px;
-  }
-
-  .about-bar {
-    width: 160px;
-  }
-
-  .skill {
+  .skills-container {
     font-size: 22px;
-    padding: 14px;
-    margin: 7px;
   }
-
-  .projects-btn {
-    font-size: 25px !important;
-    border-radius: 25px !important;
-    height: 70px;
-    width: 160px;
-    position: relative;
-    bottom: 15px;
-  }
-
-  .skills-section {
-    justify-content: space-between;
-    height: 46vh;
-  }
-
-  .skills-title h2 {
-    font-size: 36px;
-  }
-
-  .skills-bar {
-    width: 110px;
-  }
-
-} */
+}

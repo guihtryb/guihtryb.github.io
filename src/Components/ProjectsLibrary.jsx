@@ -43,11 +43,13 @@ export default function ProjectsLibrary() {
               </video>
                 <h2 className="projects-name">{ name }</h2>
             </div>
+            <div className="projects-info">
             <p className="projects-description">
             { description }
             </p>
             <div className="projects-skills-container">
             { skills.map((skill) => <button className="project-skill" key={skill} > {skill} </button> ) }
+            </div>
             </div>
           </div>
           )}
