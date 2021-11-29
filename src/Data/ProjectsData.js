@@ -1,6 +1,6 @@
 import wallet from '../Videos/wallet.mp4';
-import pokeRTL from '../Videos/pokeRTL.mp4';
-import pixelArt from '../Videos/pixelArt.mp4'
+// import pokeRTL from '../Videos/pokeRTL.mp4';
+// import pixelArt from '../Videos/pixelArt.mp4'
 
 const projectsData = [
   {
