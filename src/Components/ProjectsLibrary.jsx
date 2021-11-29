@@ -4,6 +4,8 @@ import 'aos/dist/aos.css';
 import '../Style/Projects.css'
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import projectsData from '../Data/ProjectsData';
+import '../Style/About.css';
+
 
 export default function ProjectsLibrary() {
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function ProjectsLibrary() {
             <FaArrowCircleLeft className="left-arrow"  onClick={ nextSlide }/>
             <FaArrowCircleRight className="right-arrow" onClick={ prevSlide } />
           </div>
-          { projectsData.map(({ name, description, skills, repoLink, video }, index) => (
+          { projectsData.map(({ name, description, skills, app, video }, index) => (
             <div className={ index === current ? 'slide active' : 'slide'} key={ name }>
           { index === current && (
           <div className="projects-box" key={ index }>
@@ -41,14 +43,23 @@ export default function ProjectsLibrary() {
               <video className="projects-video" controls>
               <source src={ video } type="video/mp4"/>
               </video>
-                <h2 className="projects-name">{ name }</h2>
+                <h2 className="projects-name">
+              <a href={ app }className="projects-link">
+                  { name }
+                </a>
+                </h2>
             </div>
-            <div className="projects-info">
+                <div className="projects-info">
             <p className="projects-description">
             { description }
+            <br />
             </p>
+            <span className="try-it">
+              Try it 👉<a href={ app }className="projects-link">application</a>
+              </span>
+
             <div className="projects-skills-container">
-            { skills.map((skill) => <button className="project-skill" key={skill} > {skill} </button> ) }
+            { skills.map((skill) => <button className={`skill ${skill.family}`} key={skill} > {skill.stack} </button> ) }
             </div>
             </div>
           </div>
