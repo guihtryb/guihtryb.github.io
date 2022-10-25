@@ -1,0 +1,14 @@
+/* https://coolors.co/palette/020202-0d2818-04471c-058c42-16db65 */
+* {
+  color: #D8F3DC;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#root {
+  background-color: #101010;
+  min-height: 100vh;
+  min-width: 100vw;
+}

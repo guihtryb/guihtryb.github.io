@@ -4,14 +4,15 @@ import About from './pages/About';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Projects from './pages/Projects';
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/sobre" element={<About />} />
+        <Route path="/projetos" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
