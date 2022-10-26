@@ -33,10 +33,6 @@
 
 @media  (min-width : 375px) {
   .title span {
-   font-size: 56px;
-  }
-
-  .list-roles li {
-      font-size: 18px;
+   font-size: 112px;
   }
 }
