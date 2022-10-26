@@ -9,6 +9,7 @@ export default function Home() {
     <div>
       <Header />
       <section className="section-home-bg">
+        <div className="img-bg" alt="background decoration" />
         <div className="section-home-container">
           <div className="home-content">
             <h1 className="title">
