@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.contact-modal {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  height: 15px;
+  left: calc(50vw - 160px);
+  padding: 35px 70px 5px 70px;
+  background-color: #1B4332;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.contact-modal button {
+  color: #FFF;
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: 'Roboto', 'sans-serif';
+  transition: color ease 0.2s;
+}
+
+.contact-modal button::after {
+  content: url('../../images/icons/arrow.svg');
+  position: absolute;
+  top: -22px;
+  left: calc(50% - 10px);
+}
+
+.contact-list {
+  display: none;
+}
+
+.modal-container.open {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+
+.contact-modal.open {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 300px;
+}
+
+.contact-modal.open:hover {
+  box-shadow: 0 0 0;
+}
+
+.contact-list.open {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  flex-direction: column;
+  height: fit-content;
+  width: 250px;
+}
+
+.contact-modal.open button::after {
+  top: -29px;
+  transform: rotate(180deg);
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.88);
+  border-radius: 16px;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.contact-list li:hover {
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.contact-list a {
+  transition: color ease 0.2s;
+  font-family: 'Poppins';
+  letter-spacing: 5px;
+}
+
+.contact-list li:hover a {
+  color: #52B788;
+}
+
+@media (min-width : 745px) {
+  .contact-modal button {
+    font-size: 18px;
+  }
+
+  .contact-modal {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 4px;
+    background-color: transparent;
+  }
+  
+  .contact-modal button {
+    display: none;
+  }
+  
+  .contact-list {
+    display: block;
+  }
+
+  .contact-list {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    padding: 16px 0;
+  }
+  
+  .contact-list li {
+    gap: 20px;
+  }
+}
