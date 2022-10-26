@@ -115,7 +115,7 @@
   .contact-modal, .contact-modal.open {
     background-color: transparent;
     height: fit-content;
-    left: 12px;
+    left: calc(50vw - 280px);
     padding: 10px;
     position: absolute;
     width: fit-content;

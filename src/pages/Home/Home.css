@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
+
+.section-home-bg {
+  height: calc(100vh - 90px);
+  width: calc(100vw - 60px);
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.section-home-container {
+  padding-top: 64px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title span {
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 40px;
+  font-weight: 800;
+  color: #52B788;
+}
+
+.surname span {
+  font-size: 36px;
+  color: #FFF;
+}
+
+.surname span:not(:last-child) {
+  font-weight: 600;
+  letter-spacing: 30px;
+  transition: color ease 0.2s;
+  cursor: pointer;
+}
+
+.surname span:hover {
+  color: #52B788;
+}
+
+.list-roles {
+  display: flex;
+  padding: 16px 0;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-roles li {
+  font-size: 18px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.list-roles li::before {
+  position: absolute;
+  content: '';
+  border-radius: 12px;
+  padding: 1px;
+  height: 100%;
+  left: 0;
+  background-color: #52B788;
+}
+
+.list-roles li a {
+  transition: color ease 0.2s;
+}
+
+.list-roles li a:hover {
+  color: #99E2B4;
+}
+
+@media  (min-width : 375px) {
+  .title span {
+   font-size: 56px;
+  }
+
+  .list-roles li {
+      font-size: 18px;
+  }
+
+  .section-home-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media  (min-width : 745px) {
+  .list-roles li::before {
+    padding: 0;
+  }
+
+  .list-roles {
+    padding: 20px 0;
+    flex-direction: row;
+  }
+
+  .list-roles li {
+    padding: 0;
+  }
+
+  .list-roles li a {
+    transition: color ease 0.2s;
+  }
+
+  .list-roles li a:hover {
+    color: #52B788;
+  }
+
+  .front::after {
+    content: '';
+    padding: 1px;
+    margin-left: 12px;
+    background-color: #D8F3DC;
+  }
+}
