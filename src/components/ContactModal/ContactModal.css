@@ -106,7 +106,7 @@
     width: fit-content;
     height: fit-content;
     position: absolute;
-    top: 98%;
+    top: 100%;
     z-index: 100;
   }
 
@@ -116,6 +116,7 @@
     height: fit-content;
     left: 4px;
     background-color: transparent;
+    padding: 30px 50px 30px;
   }
 
   .contact-modal button {
@@ -127,6 +128,7 @@
     gap: 12px;
     flex-direction: row;
     padding: 0;
+    width: fit-content;
   }
 
   .contact-list li {
