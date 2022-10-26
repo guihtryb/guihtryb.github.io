@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactModal from '../components/ContactModal/ContactModal';
 import Header from '../components/Header/Header';
 
 export default function Projects() {
@@ -6,6 +7,7 @@ export default function Projects() {
     <div>
       <Header />
       Projects
+      <ContactModal />
     </div>
   );
 }
