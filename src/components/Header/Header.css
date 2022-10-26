@@ -4,7 +4,7 @@
   background-color: #081c15ce;
   display: flex;
   font-weight: 700;
-  height: 55px;
+  height: 60px;
   width: 100vw;
 }
 
@@ -19,7 +19,7 @@
 .menu-list {
   display: flex;
   justify-content: space-around;
-  height: 51.5px;
+  height: 56.5px;
 }
 
 .menu-list li {
