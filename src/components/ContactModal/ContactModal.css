@@ -102,33 +102,33 @@
 }
 
 @media (min-width : 745px) {
-  .contact-modal button {
-    font-size: 18px;
+  .modal-container, .modal-container.open {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 98%;
+    z-index: 100;
   }
 
-  .contact-modal {
+  .contact-modal, .contact-modal.open {
     position: absolute;
     width: fit-content;
     height: fit-content;
     left: 4px;
     background-color: transparent;
   }
-  
+
   .contact-modal button {
     display: none;
   }
-  
-  .contact-list {
-    display: block;
-  }
 
-  .contact-list {
+  .contact-list, .contact-list.open {
     display: flex;
     gap: 12px;
     flex-direction: row;
-    padding: 16px 0;
+    padding: 0;
   }
-  
+
   .contact-list li {
     gap: 20px;
   }
