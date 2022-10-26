@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
 
 .section-home-bg {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 100px);
   width: calc(100vw - 60px);
   display: flex;
   flex-direction: column;
