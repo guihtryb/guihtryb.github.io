@@ -1,0 +1,35 @@
+.main-about-bg {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px 75px 0px;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+}
+
+.main-about-container {
+  max-width: 85vw;
+  font-family: 'Raleway';
+  flex-direction: column;
+  display: flex;
+  gap: 12px;
+}
+
+.main-about-container h1, h2 {
+  color: #FFF;
+}
+
+.main-about-container h1 {
+  font-size: 52px;
+}
+
+.main-about-container h2 {
+  font-size: 36px;
+}
+
+.main-about-container p {
+  margin-top: 12px;
+  color: #D8F3DC;
+  font-size: 20px;
+}
+

@@ -9,7 +9,7 @@
   justify-content: center;
   left: calc(50vw - (15vw + 70px));
   padding: 35px 70px 5px 70px;
-  position: absolute;
+  position: fixed;
   width: 30vw;
 }
 

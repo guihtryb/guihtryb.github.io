@@ -1,4 +1,4 @@
-.section-home-bg {
+.main-home-bg {
   overflow: hidden;
   position: relative;
   height: calc(100vh - 90px);
@@ -23,12 +23,12 @@
   width: 100vw;
 }
 
-.section-home-container {
+.main-home-container {
   padding-top: 68px;
 }
 
 @media  (min-width : 375px) {
-  .section-home-container {
+  .main-home-container {
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
 }
 
 @media  (min-width : 745px) {
-  .section-home-bg {
+  .main-home-bg {
     height: calc(100vh - 100px);
     width: calc(100vw - 60px);
   }

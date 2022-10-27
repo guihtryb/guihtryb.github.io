@@ -3,7 +3,7 @@
   display: flex;
   font-weight: 700;
   height: 60px;
-  width: 100vw;
+  padding: 0 20px;
 }
 
 .menu-container {

@@ -7,17 +7,17 @@ import './Home.css';
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <Header />
-      <section className="section-home-bg">
+      <main className="main-home-bg">
         <div className="img-bg" alt="background decoration" />
-        <div className="section-home-container">
+        <div className="main-home-container">
           <div className="home-content">
             <Title />
             <RolesList />
           </div>
         </div>
-      </section>
+      </main>
       <ContactModal />
     </div>
   );

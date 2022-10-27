@@ -49,13 +49,6 @@
   }
 
   .list-roles li a:hover {
-    color: #52B788;
-  }
-
-  .front::after {
-    content: '';
-    padding: 1px;
-    margin-left: 12px;
-    background-color: #D8F3DC;
+    color: #99E2B4;
   }
 }
