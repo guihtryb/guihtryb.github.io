@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap&family=Raleway:wght@300;600;700&display=swap&family=Poppins:wght@400&display=swap');
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 * {
   color: #D8F3DC;
   padding: 0;

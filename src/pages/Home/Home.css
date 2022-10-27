@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
-
-.section-home-bg {
+.main-home-bg {
   overflow: hidden;
   position: relative;
   height: calc(100vh - 90px);
@@ -9,16 +7,28 @@
   flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
+  padding-top: 90px;
 }
 
+.img-bg {
+  background-image: url('../../images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  left: 0;
+  opacity: 0.3;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 0;
+}
 
-.section-home-container {
-  padding-top: 76px;
+.main-home-container {
+  padding-top: 68px;
 }
 
 @media  (min-width : 375px) {
-  .section-home-container {
+  .main-home-container {
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -26,23 +36,10 @@
     max-width: 900px;
     margin: 0 auto;
   }
-
-  .img-bg {
-    background-image: url('../../images/bg.jpg');
-    background-size: cover;
-    position: absolute;
-    opacity: 0.3;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    z-index: 0;
-    height: 100vh;
-    width: 100vw;
-  }
 }
 
 @media  (min-width : 745px) {
-  .section-home-bg {
+  .main-home-bg {
     height: calc(100vh - 100px);
     width: calc(100vw - 60px);
   }
