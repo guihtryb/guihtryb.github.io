@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
-
 .title {
   display: flex;
   flex-direction: column;
@@ -9,29 +7,34 @@
 
 .title span {
   font-family: 'Raleway', 'sans-serif';
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 800;
   color: #52B788;
 }
 
 .surname span {
-  font-size: 36px;
+  font-size: 40px;
   color: #FFF;
+  cursor: pointer;
 }
 
 .surname span:not(:last-child) {
   font-weight: 600;
   letter-spacing: 30px;
   transition: color ease 0.2s;
-  cursor: pointer;
 }
 
 .surname span:hover {
   color: #52B788;
 }
 
-
 @media  (min-width : 375px) {
+  .title span {
+   font-size: 64px;
+  }
+}
+
+@media  (min-width : 745px) {
   .title span {
    font-size: 112px;
   }
