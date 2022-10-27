@@ -1,22 +1,43 @@
+.img-about-bg {
+  background-image: url('../../images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
 .main-about-bg {
   display: flex;
-  align-items: center;
-  padding: 32px 0px 75px 0px;
-  margin: 0 auto;
+  align-items: flex-start;
+  padding: 132px 0px 100px 0px;
   position: relative;
   flex-direction: column;
 }
 
 .main-about-container {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
   max-width: 85vw;
   font-family: 'Raleway';
   flex-direction: column;
   display: flex;
+  font-weight: 600;
   gap: 12px;
+}
+
+.main-about-container h2 span{
+  color: #52B788;
 }
 
 .main-about-container h1, h2 {
   color: #FFF;
+  font-weight: 700;
 }
 
 .main-about-container h1 {
@@ -28,8 +49,83 @@
 }
 
 .main-about-container p {
+  z-index: 1;
+  position: relative;
   margin-top: 12px;
   color: #D8F3DC;
   font-size: 20px;
 }
 
+.skill-subtitle {
+  z-index: 1;
+  position: relative;
+  font-family: 'Raleway', 'sans-serif';
+  width: 85vw;
+  text-align: center;
+  padding: 36px 0;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #52B788;
+  margin-bottom: 32px;
+}
+
+.skills-container {
+  z-index: 1;
+  position: relative;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 85vw;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.skill {
+  width: 68px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #151515;
+  padding: 12px;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 14px;
+  transition: all ease 0.2s;
+}
+
+.skill-icon-bg {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skill h4 {
+  transition: color ease 0.4s;
+  letter-spacing: 0.6px;
+}
+
+.skill:hover h4 {
+  color: #52B788;
+}
+
+.skill:hover {
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8);
+  transform: translateY(-6px);
+}
+
+p span {
+  color: #52B788;
+}
+
+.skills-section-bg {
+  margin: 0 auto;
+}
+
+@media (min-width : 750px) {
+  .skills-container {
+    justify-content: flex-start;
+  }
+}
