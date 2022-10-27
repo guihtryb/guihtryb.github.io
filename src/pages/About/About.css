@@ -105,6 +105,7 @@
 .skill h4 {
   transition: color ease 0.4s;
   letter-spacing: 0.6px;
+  text-align: center;
 }
 
 .skill:hover h4 {

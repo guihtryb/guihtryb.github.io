@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactModal from '../../components/ContactModal/ContactModal';
 import Header from '../../components/Header/Header';
+import SkillCard from '../../components/SkillCard';
 import './About.css';
 import skills from './skills';
 
@@ -33,12 +34,10 @@ export default function About() {
             e seu potencial de
             {' '}
             <span>
-              transformar
-              positivamente
+              transformar positivamente
             </span>
             {' '}
-            a vida das
-            pessoas.
+            a vida das pessoas.
           </p>
           <p>
             Possuo foco em desenvolvimento
@@ -57,8 +56,8 @@ export default function About() {
             {' '}
             <span>lógica de programação</span>
             {' '}
-            em 2017 e aprofundo meus conhecimentos em
-            desenvolvimento Web desde 2021, quando iniciei meu curso de
+            em 2017 e aprofundo meus conhecimentos em desenvolvimento
+            Web desde 2021, quando iniciei meu curso de
             {' '}
             <span>
               desenvolvimento Web Full-Stack
@@ -73,16 +72,14 @@ export default function About() {
             </a>
             {' '}
             ,
-            e tenho
-            desenvolvido projetos guiados por esse potencial de transformação desde então.
+            e tenho desenvolvido projetos guiados por esse potencial de transformação desde então.
           </p>
           <p>
             A capacidade de
             {' '}
             <span>
               {' '}
-              investigação, determinação e
-              resiliência
+              investigação, determinação e resiliência
             </span>
             , são habilidades que carrego comigo para a superação de
             {' '}
@@ -97,12 +94,9 @@ export default function About() {
             className="skills-container"
           >
             {
-                skills.map((skill) => (
-                  <div className="skill" key={skill}>
-                    <div className="skill-icon-bg">
-                      <img src={skill.icon} alt={`${skill.name} icon`} />
-                    </div>
-                    <h4>{skill.name}</h4>
+                skills.map(({ name, icon }) => (
+                  <div className="skill" key={name}>
+                    <SkillCard name={name} icon={icon} />
                   </div>
                 ))
               }
