@@ -3,9 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 90px;
+  padding: 30px;
 }
 
 .img-bg {
@@ -38,7 +36,6 @@
 
 @media  (min-width : 745px) {
   .main-home-bg {
-    height: calc(100vh - 100px);
-    width: calc(100vw - 60px);
+    padding-top: 90px;
   }
 }

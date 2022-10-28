@@ -1,0 +1,144 @@
+label, input, select {
+  color: #FFF;
+  font-family: 'Poppins';
+}
+
+.projects-main-bg {
+  padding: 90px 8px;
+}
+
+.projects-main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 78vw;
+}
+
+.filters-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 350px;
+}
+
+.select-role-filter {
+  appearance: none;
+  background-color: #222;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  padding: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.label-role-filter {
+  position: relative;
+}
+
+.label-role-filter::after {
+  content: url('../../images/icons/dropdown.svg');
+  position: absolute;
+  right: 12px;
+  top: 54%;
+  transform: rotate(90deg);
+}
+
+#search-by-stack {
+  background-color: #222;
+  border-radius: 6px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  width: calc(100% - 26px);
+}
+
+.input {
+  margin-top: 6px;
+}
+
+.project-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+}
+
+.projects-title {
+  border-bottom: 2px solid #52B788;
+  color: #FFF;
+  font-family: 'Raleway', 'sans-serif';
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  padding: 36px 0;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-card {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  padding-bottom: 24px;
+  flex-direction: column;
+  font-family: 'Raleway', 'sans-serif';
+  gap: 24px;
+  margin: 0 auto;
+  min-height: 300px;
+  width: 95%;
+  background-color: #000;
+}
+
+.project-name {
+  font-weight: 300;
+  color: #FFF;
+  padding: 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #40916C;
+  transition: all ease 0.2s;
+  font-size: 24px;
+}
+
+.button-see-more {
+  background-color: #111;
+  border-radius: 24px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px 36px;
+  transition: color ease 0.2s;
+  width: fit-content;
+}
+
+.stacks-container {
+  width: 85%;
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stack {
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px;
+  background-color: #222;
+  color: #FFF;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.button-see-more:hover, .stack:hover {
+  color: #40916C;
+}
