@@ -8,6 +8,13 @@ label, input, select {
   padding-bottom: 100px;
 }
 
+.project-modal-container {
+  display: none;
+}
+.project-modal {
+  display: none;
+}
+
 .projects-main-container {
   display: flex;
   flex-direction: column;
@@ -185,7 +192,7 @@ label, input, select {
   }
 }
 
-.project-modal-container {
+.project-modal-container.open {
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -195,10 +202,10 @@ label, input, select {
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 100;
+  z-index: 101;
 }
 
-.project-modal {
+.project-modal.open {
   position: relative;
   background-color: #101010;
   padding: 24px 16px;
@@ -284,7 +291,7 @@ label, input, select {
 }
 
 @media (min-width : 450px) {
-  .project-modal {
+  .project-modal.open {
     gap: 28px;
   }
 
@@ -300,7 +307,7 @@ label, input, select {
     font-size: 24px;
   }
 
-  .project-modal p {
+  .project-modal.open p {
     margin-top: 16px;
     font-size: 18px;
   }
@@ -338,9 +345,9 @@ label, input, select {
 }
 
 @media (min-width : 750px) {
-  .project-modal {
+  .project-modal.open {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 90vw;
   }
 

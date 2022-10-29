@@ -1,45 +1,41 @@
 import React from 'react';
-import wc from '../videos/project-wc.mp4';
+import Context from '../context/Context';
 
 export default function ProjectModal() {
-  return (
-    <div className="project-modal-container">
-      <div className="project-modal">
+  const { project, openProjectModal, setOpenProjectModal } = React.useContext(Context);
+
+  return project && (
+    <div className={`project-modal-container ${openProjectModal && 'open'}`}>
+      <div className={`project-modal ${openProjectModal && 'open'}`}>
         <div className="col-1">
-          <video className="video" src={wc} controls>
+          <video className="video" src={project.video} controls>
             <track kind="captions" />
           </video>
         </div>
         <div className="col-2">
-          <h1 className="project-modal-title">Wonderful Cities</h1>
-          <h2 className="project-modal-role"> Front-End</h2>
-          <h3 className="project-modal-stacks">Stacks: ReactJS, Cypress, RTL.</h3>
-          <p>
-            O projeto reúne informações e fatos que
-            contribuam para o usuário escolher ou saber mais sobre seu próximo destino.
-          </p>
-          <p>
-            Desenvolvido com React.JS e ferramentas como React Context API e React Hooks,
-            desenvolvi seguindo o método TDD e fazendo uso da RTL e do Cypress.io.
-          </p>
-          <p>
-            Foram implementados slides, accordion lists, tooltip entre outros recursos para
-            melhorar a experiência do usuário.
-          </p>
+          <h1 className="project-modal-title">{project.name}</h1>
+          <h2 className="project-modal-role">{project.role}</h2>
+          {
+            project.stacks && (<h3 className="project-modal-stacks">{`Stacks: ${project.stacks.join(', ')}.`}</h3>)
+          }
+          {
+            project.paragraphs
+            && project.paragraphs.map(({ id, content }) => (<p key={id}>{content}</p>))
+          }
         </div>
         <div className="project-modal-actions col-3">
           <button type="button" className="project-modal-btn-action">
-            <a href="/projetos" target="_blank">
+            <a href={project.linkApp} target="_blank" rel="noreferrer">
               Open App
             </a>
           </button>
           <button type="button" className="project-modal-btn-action">
-            <a href="/projetos" target="_blank">
+            <a href={project.linkRepo} target="_blank" rel="noreferrer">
               GitHub Repo
             </a>
           </button>
         </div>
-        <button type="button" className="project-modal-btn-quit">
+        <button type="button" className="project-modal-btn-quit" onClick={() => setOpenProjectModal(false)}>
           X
         </button>
       </div>

@@ -4,10 +4,20 @@ import Header from '../../components/Header/Header';
 import RoleFilterSelect from '../../components/RoleFilterSelect';
 import StackFIlterInput from '../../components/StackFIlterInput';
 import './Projects.css';
-import wc from '../../images/project-wc.png';
 import ProjectModal from '../../components/ProjectModal';
+import ProjectsData from '../../api/ProjectsData';
+import Context from '../../context/Context';
 
 export default function Projects() {
+  const {
+    setOpenProjectModal, setProject, roleFilter, stack,
+  } = React.useContext(Context);
+
+  const handleOpenProject = (project) => {
+    setOpenProjectModal(true);
+    setProject(project);
+  };
+
   return (
     <div>
       <Header />
@@ -21,100 +31,52 @@ export default function Projects() {
             Projects
           </h1>
           <div className="projects-container">
-            <div className="project-card">
-              <img
-                className="project-image"
-                alt="wonderful cities project"
-                src={wc}
-              />
-              <h2 className="project-name">Wonderful Cities</h2>
-              <div className="stacks-container">
-                <span className="stack">ReactJS</span>
-                <span className="stack">CSS</span>
-                <span className="stack">Cypress</span>
-                <span className="stack">RTL</span>
-              </div>
-              <button className="button-see-more" type="button">Ver mais</button>
-            </div>
-            <div className="project-card">
-              <img
-                className="project-image"
-                alt="wonderful cities project"
-                src={wc}
-              />
-              <h2 className="project-name">Wonderful Cities</h2>
-              <div className="stacks-container">
-                <span className="stack">ReactJS</span>
-                <span className="stack">CSS</span>
-                <span className="stack">Cypress</span>
-                <span className="stack">RTL</span>
-              </div>
-              <button className="button-see-more" type="button">Ver mais</button>
-            </div>
-            <div className="project-card">
-              <img
-                className="project-image"
-                alt="wonderful cities project"
-                src={wc}
-              />
-              <h2 className="project-name">Wonderful Cities</h2>
-              <div className="stacks-container">
-                <span className="stack">ReactJS</span>
-                <span className="stack">CSS</span>
-                <span className="stack">Cypress</span>
-                <span className="stack">RTL</span>
-              </div>
-              <button className="button-see-more" type="button">Ver mais</button>
-            </div>
-            <div className="project-card">
-              <img
-                className="project-image"
-                alt="wonderful cities project"
-                src={wc}
-              />
-              <h2 className="project-name">Wonderful Cities</h2>
-              <div className="stacks-container">
-                <span className="stack">ReactJS</span>
-                <span className="stack">CSS</span>
-                <span className="stack">Cypress</span>
-                <span className="stack">RTL</span>
-              </div>
-              <button className="button-see-more" type="button">Ver mais</button>
-            </div>
-            <div className="project-card">
-              <img
-                className="project-image"
-                alt="wonderful cities project"
-                src={wc}
-              />
-              <h2 className="project-name">Wonderful Cities</h2>
-              <div className="stacks-container">
-                <span className="stack">ReactJS</span>
-                <span className="stack">CSS</span>
-                <span className="stack">Cypress</span>
-                <span className="stack">RTL</span>
-              </div>
-              <button className="button-see-more" type="button">Ver mais</button>
-            </div>
-            <div className="project-card">
-              <img
-                className="project-image"
-                alt="wonderful cities project"
-                src={wc}
-              />
-              <h2 className="project-name">Wonderful Cities</h2>
-              <div className="stacks-container">
-                <span className="stack">ReactJS</span>
-                <span className="stack">CSS</span>
-                <span className="stack">Cypress</span>
-                <span className="stack">RTL</span>
-              </div>
-              <button className="button-see-more" type="button">Ver mais</button>
-            </div>
+            {
+              ProjectsData.map((projectData) => {
+                if (stack) {
+                  return projectData.stacks.some((item) => item.toLowerCase()
+                    .includes(stack.toLowerCase()))
+                  && projectData.roles.includes(roleFilter)
+                  && (
+                    <div className="project-card" key={projectData.name}>
+                      <img
+                        className="project-image"
+                        alt="wonderful cities project"
+                        src={projectData.image}
+                      />
+                      <h2 className="project-name">{projectData.name}</h2>
+                      <div className="stacks-container">
+                        {
+                        projectData.stacks.map((projectStack) => (<span className="stack" key={projectStack}>{projectStack}</span>))
+                      }
+                      </div>
+                      <button className="button-see-more" type="button" onClick={() => handleOpenProject(projectData)}>Ver mais</button>
+                    </div>
+                  );
+                }
+                return projectData.roles.includes(roleFilter)
+                && (
+                  <div className="project-card" key={projectData.name}>
+                    <img
+                      className="project-image"
+                      alt="wonderful cities project"
+                      src={projectData.image}
+                    />
+                    <h2 className="project-name">{projectData.name}</h2>
+                    <div className="stacks-container">
+                      {
+                      projectData.stacks.map((projectStack) => (<span className="stack" key={projectStack}>{projectStack}</span>))
+                    }
+                    </div>
+                    <button className="button-see-more" type="button" onClick={() => handleOpenProject(projectData)}>Ver mais</button>
+                  </div>
+                );
+              })
+            }
           </div>
         </div>
       </main>
-      <ProjectModal project />
+      <ProjectModal />
       <ContactModal />
     </div>
   );
