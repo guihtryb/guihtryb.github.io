@@ -60,7 +60,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 4',
-    roles: ['Front-End'],
+    roles: ['Back-End'],
     stacks: [''],
     paragraphs: [
       {
@@ -75,7 +75,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 5',
-    roles: ['Front-End'],
+    roles: ['Back-End'],
     stacks: [''],
     paragraphs: [
       {
@@ -90,7 +90,37 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 6',
-    roles: ['Front-End'],
+    roles: ['Back-End'],
+    stacks: [''],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Coming Soon.',
+      },
+    ],
+    linkApp: '/projetos',
+    linkRepo: 'projetos',
+  },
+  {
+    video: comingSoon,
+    image: comingSoon,
+    name: 'Coming Soon 7',
+    roles: ['Full-Stack'],
+    stacks: [''],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Coming Soon.',
+      },
+    ],
+    linkApp: '/projetos',
+    linkRepo: 'projetos',
+  },
+  {
+    video: comingSoon,
+    image: comingSoon,
+    name: 'Coming Soon 8',
+    roles: ['Full-Stack'],
     stacks: [''],
     paragraphs: [
       {
