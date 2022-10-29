@@ -1,5 +1,6 @@
 import wcVideo from '../videos/project-wc.mp4';
 import wcImage from '../images/project-wc.png';
+import comingSoon from '../images/coming.jpeg';
 
 const ProjectsData = [
   {
@@ -24,6 +25,81 @@ const ProjectsData = [
     ],
     linkApp: 'https://dashing-sunburst-7efb27.netlify.app/',
     linkRepo: 'https://github.com/guihtryb/wonderful-cities-TDD/',
+  },
+  {
+    video: comingSoon,
+    image: comingSoon,
+    name: 'Coming Soon 2',
+    roles: ['Front-End'],
+    stacks: [''],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Coming Soon.',
+      },
+    ],
+    linkApp: '/projetos',
+    linkRepo: 'projetos',
+  },
+  {
+    video: comingSoon,
+    image: comingSoon,
+    name: 'Coming Soon 3',
+    roles: ['Front-End'],
+    stacks: [''],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Coming Soon.',
+      },
+    ],
+    linkApp: '/projetos',
+    linkRepo: 'projetos',
+  },
+  {
+    video: comingSoon,
+    image: comingSoon,
+    name: 'Coming Soon 4',
+    roles: ['Front-End'],
+    stacks: [''],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Coming Soon.',
+      },
+    ],
+    linkApp: '/projetos',
+    linkRepo: 'projetos',
+  },
+  {
+    video: comingSoon,
+    image: comingSoon,
+    name: 'Coming Soon 5',
+    roles: ['Front-End'],
+    stacks: [''],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Coming Soon.',
+      },
+    ],
+    linkApp: '/projetos',
+    linkRepo: 'projetos',
+  },
+  {
+    video: comingSoon,
+    image: comingSoon,
+    name: 'Coming Soon 6',
+    roles: ['Front-End'],
+    stacks: [''],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Coming Soon.',
+      },
+    ],
+    linkApp: '/projetos',
+    linkRepo: 'projetos',
   },
 ];
 
