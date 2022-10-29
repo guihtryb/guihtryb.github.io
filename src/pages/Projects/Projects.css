@@ -1,0 +1,390 @@
+label, input, select {
+  color: #FFF;
+  font-family: 'Poppins';
+}
+
+.projects-main-bg {
+  padding: 120px 8px;
+  padding-bottom: 100px;
+}
+
+.project-modal-container {
+  display: none;
+}
+.project-modal {
+  display: none;
+}
+
+.projects-main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 78vw;
+  margin: 0 auto;
+}
+
+.filters-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 350px;
+}
+
+.select-role-filter {
+  appearance: none;
+  background-color: #222;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  padding: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.label-role-filter {
+  position: relative;
+  width: 100%;
+}
+
+.label-role-filter::after {
+  content: url('../../images/icons/dropdown.svg');
+  position: absolute;
+  right: 12px;
+  top: 54%;
+  transform: rotate(90deg);
+}
+
+#search-by-stack {
+  background-color: #222;
+  border-radius: 6px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  width: calc(100% - 24px);
+}
+
+.input {
+  margin-top: 6px;
+}
+
+.project-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+}
+
+.projects-title {
+  border-bottom: 2px solid #52B788;
+  color: #FFF;
+  font-family: 'Raleway', 'sans-serif';
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  padding: 36px 0;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-card {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  padding-bottom: 24px;
+  flex-direction: column;
+  font-family: 'Raleway', 'sans-serif';
+  gap: 24px;
+  margin: 0 auto;
+  min-height: 300px;
+  width: 95%;
+  background-color: #000;
+  max-width: 350px;
+}
+
+.project-name {
+  font-weight: 300;
+  color: #FFF;
+  padding: 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #40916C;
+  transition: all ease 0.2s;
+  font-size: 24px;
+}
+
+.button-see-more {
+  background-color: #111;
+  border-radius: 24px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px 36px;
+  transition: color ease 0.2s;
+  width: fit-content;
+}
+
+.stacks-container {
+  width: 85%;
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stack {
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px;
+  background-color: #222;
+  color: #FFF;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.button-see-more:hover, .stack:hover {
+  color: #40916C;
+}
+
+@media (min-width : 500px) {
+  .filters-container {
+    align-self: center;
+    max-width: 70vw;
+    font-size: 20px;
+  }
+
+  .select-role-filter, input {
+    font-size: 16px;
+  }
+
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .project-card {
+    margin: 0;
+  }
+  
+}
+
+@media (min-width : 1200px) {
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  .project-card {
+    margin: 0;
+    max-width: 320px;
+  }
+}
+
+.project-modal-container.open {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 101;
+}
+
+.project-modal.open {
+  position: relative;
+  background-color: #101010;
+  padding: 24px 16px;
+  height: 75vh;
+  width: 75vw;
+  font-family: 'Raleway', 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: scroll;
+}
+
+.col-1 {
+  display: none;
+}
+
+.project-modal-title {
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.project-modal-role {
+  color: #40916C;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-modal-stacks {
+  color: #40916C;
+  font-weight: 600;
+}
+
+.project-modal p {
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.project-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-modal-btn-action {
+  color: #40916C;
+  border-radius: 6px;
+  border: none;
+  padding: 8px 0;
+  cursor: pointer;
+  background-color: #000;
+}
+
+.project-modal-btn-action:hover {
+  color: #52B788;
+}
+
+.project-modal-btn-action a {
+  padding: 8px;
+  transition: all ease 0.2s;
+  color: #40916C;
+}
+
+.project-modal-btn-action a:hover {
+  color: #52B788;
+}
+
+.project-modal-btn-quit {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #FFF;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 2px solid #FFF;
+  cursor: pointer;
+}
+
+@media (min-width : 450px) {
+  .project-modal.open {
+    gap: 28px;
+  }
+
+  .project-modal-title {
+    font-size: 36px;
+  }
+
+  .project-modal-role {
+    font-size: 28px;
+  }
+
+  .project-modal-stacks {
+    font-size: 24px;
+  }
+
+  .project-modal.open p {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  
+  .project-modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-modal-btn-action {
+    color: #40916C;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 0;
+    cursor: pointer;
+    background-color: #000;
+  }
+  
+  .project-modal-btn-action:hover {
+    color: #52B788;
+  }
+  
+  .project-modal-btn-action a {
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  .project-modal-btn-quit {
+    height: 28px;
+    width: 28px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width : 750px) {
+  .project-modal.open {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+  }
+
+  .video {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .col-1 {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .col-2 {
+    grid-column: 1;
+  }
+
+  .col-3 {
+    grid-column: 1;
+  }
+
+  .project-modal-btn-action {
+    height: 48px;
+  }
+  
+  .project-modal-btn-action:hover {
+    color: #52B788;
+  }
+  
+  .project-modal-btn-action a {
+    padding: 24px;
+  }
+
+  .project-modal-btn-quit {
+    height: 24px;
+    width: 24px;
+    font-size: 14px;
+  }
+}
