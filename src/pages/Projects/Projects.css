@@ -5,6 +5,7 @@ label, input, select {
 
 .projects-main-bg {
   padding: 90px 8px;
+  padding-bottom: 100px;
 }
 
 .projects-main-container {
@@ -12,6 +13,7 @@ label, input, select {
   flex-direction: column;
   padding: 0 20px;
   width: 78vw;
+  margin: 0 auto;
 }
 
 .filters-container {
@@ -36,6 +38,7 @@ label, input, select {
 
 .label-role-filter {
   position: relative;
+  width: 100%;
 }
 
 .label-role-filter::after {
@@ -52,7 +55,7 @@ label, input, select {
   border: none;
   outline: 0;
   padding: 12px;
-  width: calc(100% - 26px);
+  width: calc(100% - 24px);
 }
 
 .input {
@@ -81,7 +84,7 @@ label, input, select {
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 .project-card {
@@ -96,6 +99,7 @@ label, input, select {
   min-height: 300px;
   width: 95%;
   background-color: #000;
+  max-width: 350px;
 }
 
 .project-name {
@@ -141,4 +145,20 @@ label, input, select {
 
 .button-see-more:hover, .stack:hover {
   color: #40916C;
+}
+
+@media (min-width : 500px) {
+  .filters-container {
+    align-self: center;
+    align-items: center;
+    max-width: 70vw;
+  }
+
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+  }
 }

@@ -5,7 +5,7 @@ export default function StackFIlterInput() {
   const { setStack } = React.useContext(Context);
 
   return (
-    <label htmlFor="search-by-stack">
+    <label htmlFor="search-by-stack" className="label-stack-filter">
       {' '}
       Filtre por stack:
       <input
