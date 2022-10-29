@@ -283,3 +283,101 @@ label, input, select {
   cursor: pointer;
 }
 
+@media (min-width : 450px) {
+  .project-modal {
+    gap: 28px;
+  }
+
+  .project-modal-title {
+    font-size: 36px;
+  }
+
+  .project-modal-role {
+    font-size: 28px;
+  }
+
+  .project-modal-stacks {
+    font-size: 24px;
+  }
+
+  .project-modal p {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  
+  .project-modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-modal-btn-action {
+    color: #40916C;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 0;
+    cursor: pointer;
+    background-color: #000;
+  }
+  
+  .project-modal-btn-action:hover {
+    color: #52B788;
+  }
+  
+  .project-modal-btn-action a {
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  .project-modal-btn-quit {
+    height: 28px;
+    width: 28px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width : 750px) {
+  .project-modal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90vw;
+  }
+
+  .video {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .col-1 {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .col-2 {
+    grid-column: 1;
+  }
+
+  .col-3 {
+    grid-column: 1;
+  }
+
+  .project-modal-btn-action {
+    height: 48px;
+  }
+  
+  .project-modal-btn-action:hover {
+    color: #52B788;
+  }
+  
+  .project-modal-btn-action a {
+    padding: 24px;
+  }
+
+  .project-modal-btn-quit {
+    height: 24px;
+    width: 24px;
+    font-size: 14px;
+  }
+}

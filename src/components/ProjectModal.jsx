@@ -1,11 +1,14 @@
 import React from 'react';
+import wc from '../videos/project-wc.mp4';
 
 export default function ProjectModal() {
   return (
     <div className="project-modal-container">
       <div className="project-modal">
         <div className="col-1">
-          <div className="video" />
+          <video className="video" src={wc} controls>
+            <track kind="captions" />
+          </video>
         </div>
         <div className="col-2">
           <h1 className="project-modal-title">Wonderful Cities</h1>
@@ -24,7 +27,7 @@ export default function ProjectModal() {
             melhorar a experiência do usuário.
           </p>
         </div>
-        <div className="project-modal-actions">
+        <div className="project-modal-actions col-3">
           <button type="button" className="project-modal-btn-action">
             <a href="/projetos" target="_blank">
               Open App
