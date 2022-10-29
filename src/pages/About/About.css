@@ -14,7 +14,7 @@
 .main-about-bg {
   display: flex;
   align-items: flex-start;
-  padding: 90px 0px 100px 0px;
+  padding: 120px 0px 100px 0px;
   position: relative;
   flex-direction: column;
 }
@@ -52,11 +52,12 @@
   z-index: 1;
   position: relative;
   margin-top: 12px;
-  color: #D8F3DC;
+  color: #FFF;
   font-size: 20px;
 }
 
 .skill-subtitle {
+  color: #FFF;
   z-index: 1;
   position: relative;
   font-family: 'Raleway', 'sans-serif';
@@ -80,16 +81,17 @@
 }
 
 .skill {
-  width: 68px;
+  align-items: center;
+  background-color: #151515;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #151515;
-  padding: 12px;
   font-family: 'Poppins', 'sans-serif';
   font-size: 14px;
+  padding: 12px;
   transition: all ease 0.2s;
+  width: 68px;
+  border: none;
 }
 
 .skill-icon-bg {
@@ -128,5 +130,9 @@ p span {
 @media (min-width : 750px) {
   .skills-container {
     justify-content: flex-start;
+  }
+
+  .skill-subtitle {
+    font-size: 32px;
   }
 }

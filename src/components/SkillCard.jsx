@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Context from '../context/Context';
 
 export default function SkillCard({ name, icon }) {
+  const { setStack } = React.useContext(Context);
+
   return (
-    <Link to="/projetos">
+    <Link to="/projetos" onClick={() => setStack(name)}>
       <div className="skill-icon-bg">
         <img src={icon} alt={`${name} icon`} />
       </div>

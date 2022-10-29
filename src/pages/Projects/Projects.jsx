@@ -5,6 +5,7 @@ import RoleFilterSelect from '../../components/RoleFilterSelect';
 import StackFIlterInput from '../../components/StackFIlterInput';
 import './Projects.css';
 import wc from '../../images/project-wc.png';
+import ProjectModal from '../../components/ProjectModal';
 
 export default function Projects() {
   return (
@@ -21,8 +22,78 @@ export default function Projects() {
           </h1>
           <div className="projects-container">
             <div className="project-card">
-              <div className="project-image" />
-              <h2 className="project-name">Project Name</h2>
+              <img
+                className="project-image"
+                alt="wonderful cities project"
+                src={wc}
+              />
+              <h2 className="project-name">Wonderful Cities</h2>
+              <div className="stacks-container">
+                <span className="stack">ReactJS</span>
+                <span className="stack">CSS</span>
+                <span className="stack">Cypress</span>
+                <span className="stack">RTL</span>
+              </div>
+              <button className="button-see-more" type="button">Ver mais</button>
+            </div>
+            <div className="project-card">
+              <img
+                className="project-image"
+                alt="wonderful cities project"
+                src={wc}
+              />
+              <h2 className="project-name">Wonderful Cities</h2>
+              <div className="stacks-container">
+                <span className="stack">ReactJS</span>
+                <span className="stack">CSS</span>
+                <span className="stack">Cypress</span>
+                <span className="stack">RTL</span>
+              </div>
+              <button className="button-see-more" type="button">Ver mais</button>
+            </div>
+            <div className="project-card">
+              <img
+                className="project-image"
+                alt="wonderful cities project"
+                src={wc}
+              />
+              <h2 className="project-name">Wonderful Cities</h2>
+              <div className="stacks-container">
+                <span className="stack">ReactJS</span>
+                <span className="stack">CSS</span>
+                <span className="stack">Cypress</span>
+                <span className="stack">RTL</span>
+              </div>
+              <button className="button-see-more" type="button">Ver mais</button>
+            </div>
+            <div className="project-card">
+              <img
+                className="project-image"
+                alt="wonderful cities project"
+                src={wc}
+              />
+              <h2 className="project-name">Wonderful Cities</h2>
+              <div className="stacks-container">
+                <span className="stack">ReactJS</span>
+                <span className="stack">CSS</span>
+                <span className="stack">Cypress</span>
+                <span className="stack">RTL</span>
+              </div>
+              <button className="button-see-more" type="button">Ver mais</button>
+            </div>
+            <div className="project-card">
+              <img
+                className="project-image"
+                alt="wonderful cities project"
+                src={wc}
+              />
+              <h2 className="project-name">Wonderful Cities</h2>
+              <div className="stacks-container">
+                <span className="stack">ReactJS</span>
+                <span className="stack">CSS</span>
+                <span className="stack">Cypress</span>
+                <span className="stack">RTL</span>
+              </div>
               <button className="button-see-more" type="button">Ver mais</button>
             </div>
             <div className="project-card">
@@ -43,6 +114,7 @@ export default function Projects() {
           </div>
         </div>
       </main>
+      <ProjectModal project />
       <ContactModal />
     </div>
   );

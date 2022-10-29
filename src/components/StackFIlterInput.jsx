@@ -2,7 +2,7 @@ import React from 'react';
 import Context from '../context/Context';
 
 export default function StackFIlterInput() {
-  const { setStack } = React.useContext(Context);
+  const { stack, setStack } = React.useContext(Context);
 
   return (
     <label htmlFor="search-by-stack" className="label-stack-filter">
@@ -11,6 +11,7 @@ export default function StackFIlterInput() {
       <input
         id="search-by-stack"
         className="input"
+        value={stack}
         onChange={({ target }) => setStack(target.value)}
         placeholder="Ex: JavaScript"
       />

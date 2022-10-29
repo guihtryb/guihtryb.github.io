@@ -5,8 +5,8 @@ import './RolesList.css';
 export default function RolesList() {
   return (
     <ul className="list-roles">
-      <RoleItem name="Front-End Developer" />
-      <RoleItem name="Full-Stack Web Development Student" />
+      <RoleItem name="Front-End Developer" role-web="Front-End" />
+      <RoleItem name="Full-Stack Web Development Student" roleWeb="Full-Stack" />
     </ul>
 
   );
