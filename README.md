@@ -40,7 +40,7 @@ This page has a simple message and a bottom to redirect you to the home page.
   <img src="public/assets/notFound.png" alt="home page"/>
 
 I developed this portfolio following the "mobile first" method, so it's available and thought to all screen sizes.
-
   <img src="public/assets/project-modal-responsive.png" alt="home page"/>
   <img src="public/assets/project-modal.png" alt="home page"/>
-</kbd>
+
+Avaliable <a href="https://guihtryb.github.io/home">here!</a>
