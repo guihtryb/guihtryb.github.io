@@ -8,7 +8,7 @@ const ProjectsData = [
     image: wcImage,
     name: 'Wonderful Cities',
     roles: ['Front-End'],
-    stacks: ['ReactJS', 'CSS', 'Cypress.io', 'RTL', 'JavaScript'],
+    stacks: ['ReactJS', 'HTML', 'CSS', 'Cypress.io', 'RTL', 'JavaScript'],
     paragraphs: [
       {
         id: 0,
