@@ -12,23 +12,23 @@
 }
 
 .main-about-bg {
-  display: flex;
   align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   padding: 120px 0px 100px 0px;
   position: relative;
-  flex-direction: column;
 }
 
 .main-about-container {
-  z-index: 1;
-  position: relative;
-  margin: 0 auto;
-  max-width: 85vw;
-  font-family: 'Raleway';
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
+  font-family: 'Raleway';
   font-weight: 600;
   gap: 12px;
+  margin: 0 auto;
+  max-width: 85vw;
+  position: relative;
+  z-index: 1;
 }
 
 .main-about-container h2 span{
@@ -49,41 +49,42 @@
 }
 
 .main-about-container p {
-  z-index: 1;
-  position: relative;
-  margin-top: 12px;
   color: #FFF;
   font-size: 20px;
+  margin-top: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .skill-subtitle {
-  color: #FFF;
-  z-index: 1;
-  position: relative;
-  font-family: 'Raleway', 'sans-serif';
-  width: 85vw;
-  text-align: center;
-  padding: 36px 0;
-  padding-bottom: 24px;
   border-bottom: 2px solid #52B788;
+  color: #FFF;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 32px;
   margin-bottom: 32px;
+  padding-bottom: 24px;
+  padding: 36px 0;
+  position: relative;
+  text-align: center;
+  z-index: 1;
 }
 
 .skills-container {
-  z-index: 1;
-  position: relative;
-  gap: 32px;
   display: flex;
   flex-wrap: wrap;
-  width: 85vw;
-  margin: 0 auto;
+  gap: 32px;
   justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  width: 85vw;
+  z-index: 1;
 }
 
 .skill {
   align-items: center;
   background-color: #151515;
   border-radius: 12px;
+  border: none;
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', 'sans-serif';
@@ -91,23 +92,22 @@
   padding: 12px;
   transition: all ease 0.2s;
   width: 68px;
-  border: none;
 }
 
 .skill-icon-bg {
+  align-items: center;
   background-color: #111;
   border-radius: 12px;
-  padding: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 8px;
+  padding: 10px;
 }
 
 .skill h4 {
-  transition: color ease 0.4s;
   letter-spacing: 0.6px;
   text-align: center;
+  transition: color ease 0.4s;
 }
 
 .skill:hover h4 {
