@@ -7,71 +7,38 @@ import './Projects.css';
 import ProjectModal from '../../components/ProjectModal';
 import ProjectsData from '../../api/ProjectsData';
 import Context from '../../context/Context';
+import ProjectCard from '../../components/ProjectCard';
 
 export default function Projects() {
-  const {
-    setOpenProjectModal, setProject, roleFilter, stack,
-  } = React.useContext(Context);
+  const { roleFilter, stack } = React.useContext(Context);
 
-  const handleOpenProject = (project) => {
-    setOpenProjectModal(true);
-    setProject(project);
+  const handleFilters = (data) => {
+    if (stack) {
+      return data.stacks.some((item) => item.toLowerCase()
+        .includes(stack.toLowerCase()))
+      && data.roles.includes(roleFilter)
+      && (<ProjectCard projectData={data} />);
+    }
+    return data.roles.includes(roleFilter)
+    && (<ProjectCard projectData={data} />);
   };
 
   return (
     <div>
       <Header />
       <main className="projects-main-bg">
+        <div className="img-bg" alt="background decoration" />
         <div className="projects-main-container">
           <div className="filters-container">
             <RoleFilterSelect />
             <StackFIlterInput />
           </div>
           <h1 className="projects-title">
-            Projects
+            Projetos
           </h1>
           <div className="projects-container">
             {
-              ProjectsData.map((projectData) => {
-                if (stack) {
-                  return projectData.stacks.some((item) => item.toLowerCase()
-                    .includes(stack.toLowerCase()))
-                  && projectData.roles.includes(roleFilter)
-                  && (
-                    <div className="project-card" key={projectData.name}>
-                      <img
-                        className="project-image"
-                        alt="wonderful cities project"
-                        src={projectData.image}
-                      />
-                      <h2 className="project-name">{projectData.name}</h2>
-                      <div className="stacks-container">
-                        {
-                        projectData.stacks.map((projectStack) => (<span className="stack" key={projectStack}>{projectStack}</span>))
-                      }
-                      </div>
-                      <button className="button-see-more" type="button" onClick={() => handleOpenProject(projectData)}>Ver mais</button>
-                    </div>
-                  );
-                }
-                return projectData.roles.includes(roleFilter)
-                && (
-                  <div className="project-card" key={projectData.name}>
-                    <img
-                      className="project-image"
-                      alt="wonderful cities project"
-                      src={projectData.image}
-                    />
-                    <h2 className="project-name">{projectData.name}</h2>
-                    <div className="stacks-container">
-                      {
-                      projectData.stacks.map((projectStack) => (<span className="stack" key={projectStack}>{projectStack}</span>))
-                    }
-                    </div>
-                    <button className="button-see-more" type="button" onClick={() => handleOpenProject(projectData)}>Ver mais</button>
-                  </div>
-                );
-              })
+              ProjectsData.map(handleFilters)
             }
           </div>
         </div>
