@@ -282,7 +282,6 @@ label, input, select {
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid #FFF;
-  border: none;
   color: #FFF;
   cursor: pointer;
   font-size: 11px;
