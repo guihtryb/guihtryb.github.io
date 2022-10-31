@@ -7,7 +7,7 @@ export default function Header() {
 
   const pages = ['Home', 'Sobre', 'Projetos'];
 
-  const currRoute = (page) => pathname === `portfolio/${page.toLowerCase()}`;
+  const currRoute = (page) => pathname === `/portfolio/${page.toLowerCase()}`;
 
   return (
     <header className="header-bg">
