@@ -14,7 +14,7 @@ export default function NotFound() {
           <h1 className="title">
             Ops! Página não encontrada.
           </h1>
-          <Link to="/home" className="btn-back-home">
+          <Link to="/portfolio/home" className="btn-back-home">
             Voltar para Home
           </Link>
         </section>

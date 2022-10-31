@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link, Navigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
   const { pathname } = useLocation();
 
-  if (pathname === '/') return <Navigate to="/home" />;
-
   const pages = ['Home', 'Sobre', 'Projetos'];
-  const currRoute = (page) => pathname === `/${page.toLowerCase()}`;
+
+  const currRoute = (page) => pathname === `portfolio/${page.toLowerCase()}`;
 
   return (
     <header className="header-bg">
@@ -23,7 +22,7 @@ export default function Header() {
                   paddingBottom: currRoute(page) ? '0' : '3.5px solid #52B788',
                 }}
               >
-                <Link to={`/${page.toLowerCase()}`} style={{ color: currRoute(page) ? '#52B788' : '#FFF' }}>{page}</Link>
+                <Link to={`/portfolio/${page.toLowerCase()}`} style={{ color: currRoute(page) ? '#52B788' : '#FFF' }}>{page}</Link>
               </li>
             ))
         }

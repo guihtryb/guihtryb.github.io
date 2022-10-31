@@ -1,6 +1,8 @@
 /* eslint-disable consistent-return */
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  Routes, Route, useLocation, Navigate,
+} from 'react-router-dom';
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
@@ -8,15 +10,17 @@ import Projects from './pages/Projects/Projects';
 import './App.css';
 
 function App() {
+  const { pathname } = useLocation();
+
+  if (pathname === '/' || pathname === '/portfolio') return <Navigate to="portfolio/home" />;
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/sobre" element={<About />} />
-        <Route path="/projetos" element={<Projects />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="portfolio/home" element={<Home />} />
+      <Route path="portfolio/sobre" element={<About />} />
+      <Route path="portfolio/projetos" element={<Projects />} />
+      <Route path="portfolio/*" element={<NotFound />} />
+    </Routes>
   );
 }
 
