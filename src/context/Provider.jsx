@@ -4,7 +4,7 @@ import Context from './Context';
 
 export default function Provider({ children }) {
   const [stack, setStack] = React.useState('');
-  const [roleFilter, setRoleFilter] = React.useState('Front-End');
+  const [roleFilter, setRoleFilter] = React.useState('All');
   const [project, setProject] = React.useState({});
   const [openProjectModal, setOpenProjectModal] = React.useState(false);
 

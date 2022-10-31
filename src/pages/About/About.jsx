@@ -52,11 +52,16 @@ export default function About() {
             .
           </p>
           <p>
-            Iniciei meus estudos em desenvolvimento e
+            Iniciei meus estudos em
+            {' '}
+            <span>desenvolvimento</span>
+            {' '}
+            e
             {' '}
             <span>lógica de programação</span>
             {' '}
-            em 2017 e aprofundo meus conhecimentos em desenvolvimento
+            em 2017, durante meu ensino médio/técnico no IFMG,
+            e aprofundo meus conhecimentos em desenvolvimento
             Web desde 2021, quando iniciei meu curso de
             {' '}
             <span>
@@ -78,9 +83,13 @@ export default function About() {
             A capacidade de
             {' '}
             <span>
-              {' '}
-              investigação, determinação e resiliência
+              investigação
             </span>
+            ,
+            <span> determinação </span>
+            e
+            {' '}
+            <span>resiliência</span>
             , são habilidades que carrego comigo para a superação de
             {' '}
             <span>

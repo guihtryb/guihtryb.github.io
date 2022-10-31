@@ -4,7 +4,7 @@ import Context from '../context/Context';
 export default function RoleFilterSelect() {
   const { setRoleFilter, roleFilter } = React.useContext(Context);
 
-  const roleFilters = ['Front-End', 'Back-End', 'Full-Stack'];
+  const roleFilters = ['All', 'Front-End', 'Back-End', 'Full-Stack'];
   return (
     <label htmlFor="role-filter" className="label-role-filter">
       {' '}
