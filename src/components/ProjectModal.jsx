@@ -25,12 +25,12 @@ export default function ProjectModal() {
         </div>
         <div className="project-modal-actions col-3">
           <button type="button" className="project-modal-btn-action">
-            <a href={project.linkApp} target="_blank" rel="noreferrer">
+            <a href={project.linkApp ? project.linkApp : '/'} target="_blank" rel="noreferrer">
               Open App
             </a>
           </button>
           <button type="button" className="project-modal-btn-action">
-            <a href={project.linkRepo} target="_blank" rel="noreferrer">
+            <a href={project.linkRepo ? project.linkRepo : '/'} target="_blank" rel="noreferrer">
               GitHub Repo
             </a>
           </button>
