@@ -1,6 +1,6 @@
 import wcVideo from '../videos/project-wc.mp4';
-import wcImage from '../images/project-wc.png';
-import comingSoon from '../images/coming.jpeg';
+import wcImage from '../images/project-wc.avif';
+import comingSoon from '../images/coming.avif';
 
 const ProjectsData = [
   {
