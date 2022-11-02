@@ -4,7 +4,7 @@ import SeeMoreButton from './SeeMoreButton';
 
 export default function ProjectCard({ projectData }) {
   return (
-    <div className="project-card" key={projectData.name}>
+    <div className="project-card">
       <img
         className="project-image"
         alt="wonderful cities project"

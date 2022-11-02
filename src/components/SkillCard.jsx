@@ -7,7 +7,7 @@ export default function SkillCard({ name, icon }) {
   const { setStack } = React.useContext(Context);
 
   return (
-    <Link to="/projetos" onClick={() => setStack(name)}>
+    <Link to="/portfolio/projetos" onClick={() => setStack(name)}>
       <div className="skill-icon-bg">
         <img src={icon} alt={`${name} icon`} />
       </div>

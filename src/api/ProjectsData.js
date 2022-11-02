@@ -1,13 +1,13 @@
 import wcVideo from '../videos/project-wc.mp4';
-import wcImage from '../images/project-wc.png';
-import comingSoon from '../images/coming.jpeg';
+import wcImage from '../images/project-wc.avif';
+import comingSoon from '../images/coming.avif';
 
 const ProjectsData = [
   {
     video: wcVideo,
     image: wcImage,
     name: 'Wonderful Cities',
-    roles: ['Front-End'],
+    roles: ['All', 'Front-End'],
     stacks: ['ReactJS', 'HTML', 'CSS', 'Cypress.io', 'RTL', 'JavaScript'],
     paragraphs: [
       {
@@ -30,7 +30,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 2',
-    roles: ['Front-End'],
+    roles: ['All', 'Front-End'],
     stacks: ['Redux', 'HTML', 'CSS', 'RTL'],
     paragraphs: [
       {
@@ -45,7 +45,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 3',
-    roles: ['Front-End'],
+    roles: ['All', 'Front-End'],
     stacks: ['JavaScript', 'HTML', 'CSS'],
     paragraphs: [
       {
@@ -60,7 +60,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 4',
-    roles: ['Back-End'],
+    roles: ['All', 'Back-End'],
     stacks: ['MongoDB', 'NodeJS', 'JWT'],
     paragraphs: [
       {
@@ -75,7 +75,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 5',
-    roles: ['Back-End'],
+    roles: ['All', 'Back-End'],
     stacks: ['SQL', 'NodeJS', 'Sequelize'],
     paragraphs: [
       {
@@ -90,7 +90,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 6',
-    roles: ['Back-End'],
+    roles: ['All', 'Back-End'],
     stacks: ['Docker', 'SQL'],
     paragraphs: [
       {
@@ -105,7 +105,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 7',
-    roles: ['Full-Stack', 'Front-End', 'Back-End'],
+    roles: ['All', 'Full-Stack', 'Front-End', 'Back-End'],
     stacks: ['ReactJS', 'HTML', 'CSS', 'NodeJS', 'Sequelize', 'MySQL'],
     paragraphs: [
       {
@@ -120,7 +120,7 @@ const ProjectsData = [
     video: comingSoon,
     image: comingSoon,
     name: 'Coming Soon 8',
-    roles: ['Full-Stack', 'Front-End', 'Back-End'],
+    roles: ['All', 'Full-Stack', 'Front-End', 'Back-End'],
     stacks: [''],
     paragraphs: [
       {

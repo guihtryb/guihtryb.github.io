@@ -8,7 +8,7 @@ export default function RoleItem({ name, roleWeb }) {
 
   return (
     <li>
-      <Link to="/projetos" onClick={() => setRoleFilter(roleWeb)}>
+      <Link to="/portfolio/projetos" onClick={() => setRoleFilter(roleWeb)}>
         { name }
       </Link>
     </li>

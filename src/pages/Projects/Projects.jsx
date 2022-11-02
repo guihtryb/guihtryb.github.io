@@ -17,10 +17,10 @@ export default function Projects() {
       return data.stacks.some((item) => item.toLowerCase()
         .includes(stack.toLowerCase()))
       && data.roles.includes(roleFilter)
-      && (<ProjectCard projectData={data} />);
+      && (<ProjectCard projectData={data} key={data.name} />);
     }
     return data.roles.includes(roleFilter)
-    && (<ProjectCard projectData={data} />);
+    && (<ProjectCard projectData={data} key={data.name} />);
   };
 
   return (

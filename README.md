@@ -43,4 +43,4 @@ I developed this portfolio following the "mobile first" method, so it's availabl
   <img src="public/assets/project-modal-responsive.png" alt="home page"/>
   <img src="public/assets/project-modal.png" alt="home page"/>
 
-Avaliable <a href="https://guihtryb.github.io/home">here!</a>
+Avaliable <a href="https://guihtryb.github.io/">here!</a>
