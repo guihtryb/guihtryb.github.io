@@ -40,7 +40,11 @@ export default function About() {
             a vida das pessoas.
           </p>
           <p>
-            Possuo foco em desenvolvimento
+            Sou
+            {' '}
+            <span>desenvolvedor Full-Stack</span>
+            {' '}
+            com foco em desenvolvimento
             {' '}
             <span>
               Front-End
