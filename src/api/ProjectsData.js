@@ -1,5 +1,7 @@
 import wcVideo from '../videos/project-wc.mp4';
+import triviaVideo from '../videos/project-trivia.mp4';
 import wcImage from '../images/project-wc.avif';
+import triviaImg from '../images/project-trivia.avif';
 import comingSoon from '../images/coming.avif';
 
 const ProjectsData = [
@@ -27,19 +29,23 @@ const ProjectsData = [
     linkRepo: 'https://github.com/guihtryb/wonderful-cities-TDD/',
   },
   {
-    video: comingSoon,
-    image: comingSoon,
-    name: 'Coming Soon 2',
+    video: triviaVideo,
+    image: triviaImg,
+    name: 'Trivia Game',
     roles: ['All', 'Front-End'],
-    stacks: ['Redux', 'HTML', 'CSS', 'RTL'],
+    stacks: ['Redux', 'ReactJS', 'HTML', 'CSS', 'JavaScript'],
     paragraphs: [
       {
         id: 0,
-        content: 'Coming Soon.',
+        content: 'Desenvolvido durante o módulo de Front-End na Trybe, durante o bloco de Redux, o App consiste em um jogo de Perguntas & Respostas com tempo limitado e sistema de Ranking.',
+      },
+      {
+        id: 0,
+        content: 'O projeto foi desenvolvido em grupo utilizando metodologias ágeis, e foi realizado integração com uma API externa para as informações do game.',
       },
     ],
-    linkApp: '/',
-    linkRepo: '/',
+    linkApp: 'https://guihtryb.github.io/trivia-game',
+    linkRepo: 'https://github.com/guihtryb/trivia-game',
   },
   {
     video: comingSoon,

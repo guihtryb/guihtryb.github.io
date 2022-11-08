@@ -226,8 +226,11 @@ label, input, select {
 }
 
 .project-modal-title {
+  text-align: center;
+  border-bottom: 1.5px solid;
   color: #FFF;
   margin-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .project-modal-role {
@@ -300,6 +303,7 @@ label, input, select {
 
   .project-modal-title {
     font-size: 36px;
+    text-align: start;
   }
 
   .project-modal-role {
