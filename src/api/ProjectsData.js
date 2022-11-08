@@ -1,7 +1,9 @@
 import wcVideo from '../videos/project-wc.mp4';
 import triviaVideo from '../videos/project-trivia.mp4';
+import rtlVideo from '../videos/project-rtl.mp4';
 import wcImage from '../images/project-wc.avif';
 import triviaImg from '../images/project-trivia.avif';
+import rtlImg from '../images/project-rtl.avif';
 import comingSoon from '../images/coming.avif';
 
 const ProjectsData = [
@@ -33,7 +35,7 @@ const ProjectsData = [
     image: triviaImg,
     name: 'Trivia Game',
     roles: ['All', 'Front-End'],
-    stacks: ['Redux', 'ReactJS', 'HTML', 'CSS', 'JavaScript'],
+    stacks: ['Redux', 'ReactJS', 'HTML', 'CSS', 'JavaScript', 'GitHub'],
     paragraphs: [
       {
         id: 0,
@@ -41,11 +43,30 @@ const ProjectsData = [
       },
       {
         id: 0,
-        content: 'O projeto foi desenvolvido em grupo utilizando metodologias ágeis, e foi realizado integração com uma API externa para as informações do game.',
+        content: 'O projeto foi desenvolvido em grupo utilizando metódologias ágeis, e foi realizado integração com uma API externa para as informações do game.',
       },
     ],
     linkApp: 'https://guihtryb.github.io/trivia-game',
     linkRepo: 'https://github.com/guihtryb/trivia-game',
+  },
+  {
+    video: rtlVideo,
+    image: rtlImg,
+    name: 'Pokédex RTL',
+    roles: ['All', 'Front-End'],
+    stacks: ['JavaScript', 'CSS', 'React Testing Library', 'GitHub'],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Projeto desenvolvido durante o módulo de Front-End da Trybe, durante o bloco sobre React Testing Library, com objetivo de utilizar os seletores da React Testing Library, simular eventos, testar fluxos assíncronos, criar mocks de APIs e testar inputs, para testes automotizados.',
+      },
+      {
+        id: 1,
+        content: 'Minha função foi testar a aplicação, e opcioanalmente estilizei partes como o header e os botôes da aplicação.',
+      },
+    ],
+    linkApp: 'https://guihtryb.github.io/pokedex-rtl/',
+    linkRepo: 'https://github.com/guihtryb/pokedex-rtl',
   },
   {
     video: comingSoon,
