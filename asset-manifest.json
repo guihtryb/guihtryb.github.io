@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.63042333.css",
-    "main.js": "/static/js/main.aab92f9c.js",
+    "main.js": "/static/js/main.35d67a32.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/project-trivia.mp4": "/static/media/project-trivia.ea58d580c8872a333ada.mp4",
     "static/media/project-rtl.mp4": "/static/media/project-rtl.8261f60d8e09b7223015.mp4",
     "static/media/project-wc.mp4": "/static/media/project-wc.56d98badd92b0a408fb9.mp4",
     "static/media/bg.avif": "/static/media/bg.ac32fc77604c58185780.avif",
     "static/media/project-rtl.avif": "/static/media/project-rtl.de8d81694e4ef906be16.avif",
     "static/media/project-wc.avif": "/static/media/project-wc.527acc85cb650ea1c738.avif",
-    "static/media/project-trivia.avif": "/static/media/project-trivia.55dd569f178d29b1ee78.avif",
     "static/media/coming.avif": "/static/media/coming.0d4fd3bfe28cf3838ee7.avif",
     "static/media/jest-2.svg": "/static/media/jest-2.d40e80a2afffa671b75bb8dbddb6252d.svg",
     "static/media/mysql-6.svg": "/static/media/mysql-6.12f077dc1376f7fd036674a9333292c3.svg",
@@ -28,11 +26,11 @@
     "static/media/html-1.svg": "/static/media/html-1.cfa0ac4ba2df54b78d5cfbd0a86ba715.svg",
     "static/media/arrow.svg": "/static/media/arrow.2799cba4ac01a79b5871.svg",
     "main.63042333.css.map": "/static/css/main.63042333.css.map",
-    "main.aab92f9c.js.map": "/static/js/main.aab92f9c.js.map",
+    "main.35d67a32.js.map": "/static/js/main.35d67a32.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63042333.css",
-    "static/js/main.aab92f9c.js"
+    "static/js/main.35d67a32.js"
   ]
 }
