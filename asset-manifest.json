@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.aefa761c.css",
+    "main.css": "/static/css/main.63042333.css",
     "main.js": "/static/js/main.98e43016.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/project-trivia.mp4": "/static/media/project-trivia.ea58d580c8872a333ada.mp4",
@@ -25,12 +25,12 @@
     "static/media/css-3.svg": "/static/media/css-3.8250a81626fb2e71e57b97fdcc3e5cce.svg",
     "static/media/html-1.svg": "/static/media/html-1.cfa0ac4ba2df54b78d5cfbd0a86ba715.svg",
     "static/media/arrow.svg": "/static/media/arrow.2799cba4ac01a79b5871.svg",
-    "main.aefa761c.css.map": "/static/css/main.aefa761c.css.map",
+    "main.63042333.css.map": "/static/css/main.63042333.css.map",
     "main.98e43016.js.map": "/static/js/main.98e43016.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aefa761c.css",
+    "static/css/main.63042333.css",
     "static/js/main.98e43016.js"
   ]
 }
