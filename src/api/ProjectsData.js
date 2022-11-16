@@ -1,3 +1,5 @@
+import getItVideo from '../videos/project-get-it.mp4';
+import getItImg from '../images/project-get-it.avif';
 import wcVideo from '../videos/project-wc.mp4';
 import rtlVideo from '../videos/project-rtl.mp4';
 import wcImage from '../images/project-wc.avif';
@@ -5,6 +7,25 @@ import rtlImg from '../images/project-rtl.avif';
 import comingSoon from '../images/coming.avif';
 
 const ProjectsData = [
+  {
+    video: getItVideo,
+    image: getItImg,
+    name: 'Get it!',
+    roles: ['All', 'Back-End', 'Front-End', 'Full-Stack'],
+    stacks: ['ReactJS', 'HTML', 'CSS', 'JWT', 'GitHub', 'NodeJS'],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Projeto individual, trata-se de um E-commerce em que é possível comprar items tanto com dinheiro quanto com pontos obtidos na plataforma.',
+      },
+      {
+        id: 1,
+        content: 'A aplicação possui páginas específicas para pessoa consumidora e adminstradora.',
+      },
+    ],
+    linkApp: '/',
+    linkRepo: 'https://github.com/guihtryb/get-it-controle-de-pontos',
+  },
   {
     video: wcVideo,
     image: wcImage,
@@ -47,21 +68,7 @@ const ProjectsData = [
     linkApp: 'https://guihtryb.github.io/pokedex-rtl/',
     linkRepo: 'https://github.com/guihtryb/pokedex-rtl',
   },
-  {
-    video: comingSoon,
-    image: comingSoon,
-    name: 'Coming Soon 4',
-    roles: ['All', 'Back-End'],
-    stacks: ['MongoDB', 'NodeJS', 'JWT'],
-    paragraphs: [
-      {
-        id: 0,
-        content: 'Coming Soon.',
-      },
-    ],
-    linkApp: '/',
-    linkRepo: '/',
-  },
+
   {
     video: comingSoon,
     image: comingSoon,
