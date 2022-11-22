@@ -1,12 +1,32 @@
-import getItVideo from '../videos/project-get-it.mp4';
 import getItImg from '../images/project-get-it.avif';
+import getItVideo from '../videos/project-get-it.mp4';
+
+import wcImg from '../images/project-wc.avif';
 import wcVideo from '../videos/project-wc.mp4';
-import rtlVideo from '../videos/project-rtl.mp4';
-import wcImage from '../images/project-wc.avif';
-import rtlImg from '../images/project-rtl.avif';
-import comingSoon from '../images/coming.avif';
+
+import transfersApp from '../images/project-transfers-app.avif';
+import transfersAppVideo from '../videos/project-transfers-app.mp4';
 
 const ProjectsData = [
+  {
+    video: transfersAppVideo,
+    image: transfersApp,
+    name: 'Transfers App',
+    roles: ['All', 'Front-End', 'Back-End', 'Full-Stack'],
+    stacks: ['ReactJS', 'HTML', 'CSS', 'JavaScript', 'NodeJS', 'Fastify', 'JWT', 'Prisma'],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'O projeto consiste em uma aplicação Full-Stack que permite que os usuários criem contas e realizem transações entre sí.',
+      },
+      {
+        id: 1,
+        content: 'Front-End desenvolvido com ReactJS e TypeScript, e Back-End desenvolvido com NodeJS, Fastify e a ORM Prisma.',
+      },
+    ],
+    linkApp: '/',
+    linkRepo: 'https://github.com/guihtryb/transfers-app',
+  },
   {
     video: getItVideo,
     image: getItImg,
@@ -28,7 +48,7 @@ const ProjectsData = [
   },
   {
     video: wcVideo,
-    image: wcImage,
+    image: wcImg,
     name: 'Wonderful Cities',
     roles: ['All', 'Front-End'],
     stacks: ['ReactJS', 'HTML', 'CSS', 'Cypress.io', 'RTL', 'JavaScript'],
@@ -48,86 +68,6 @@ const ProjectsData = [
     ],
     linkApp: 'https://dashing-sunburst-7efb27.netlify.app/',
     linkRepo: 'https://github.com/guihtryb/wonderful-cities-TDD/',
-  },
-  {
-    video: rtlVideo,
-    image: rtlImg,
-    name: 'Pokédex RTL',
-    roles: ['All', 'Front-End', 'QA'],
-    stacks: ['JavaScript', 'ReactJS', 'CSS', 'React Testing Library', 'GitHub'],
-    paragraphs: [
-      {
-        id: 0,
-        content: 'Projeto desenvolvido durante o módulo de Front-End da Trybe, durante o bloco sobre React Testing Library, com objetivo de utilizar os seletores da React Testing Library, simular eventos, testar fluxos assíncronos, criar mocks de APIs e testar inputs, para testes automotizados.',
-      },
-      {
-        id: 1,
-        content: 'Minha função foi testar a aplicação, e opcioanalmente estilizei partes como o header e os botôes da aplicação.',
-      },
-    ],
-    linkApp: 'https://guihtryb.github.io/pokedex-rtl/',
-    linkRepo: 'https://github.com/guihtryb/pokedex-rtl',
-  },
-
-  {
-    video: comingSoon,
-    image: comingSoon,
-    name: 'Coming Soon 5',
-    roles: ['All', 'Back-End'],
-    stacks: ['SQL', 'NodeJS', 'Sequelize'],
-    paragraphs: [
-      {
-        id: 0,
-        content: 'Coming Soon.',
-      },
-    ],
-    linkApp: '/',
-    linkRepo: '/',
-  },
-  {
-    video: comingSoon,
-    image: comingSoon,
-    name: 'Coming Soon 6',
-    roles: ['All', 'Back-End'],
-    stacks: ['Docker', 'SQL'],
-    paragraphs: [
-      {
-        id: 0,
-        content: 'Coming Soon.',
-      },
-    ],
-    linkApp: '/',
-    linkRepo: '/',
-  },
-  {
-    video: comingSoon,
-    image: comingSoon,
-    name: 'Coming Soon 7',
-    roles: ['All', 'Full-Stack', 'Front-End', 'Back-End'],
-    stacks: ['ReactJS', 'HTML', 'CSS', 'NodeJS', 'Sequelize', 'MySQL'],
-    paragraphs: [
-      {
-        id: 0,
-        content: 'Coming Soon.',
-      },
-    ],
-    linkApp: '/',
-    linkRepo: '/',
-  },
-  {
-    video: comingSoon,
-    image: comingSoon,
-    name: 'Coming Soon 8',
-    roles: ['All', 'Full-Stack', 'Front-End', 'Back-End'],
-    stacks: [''],
-    paragraphs: [
-      {
-        id: 0,
-        content: 'Coming Soon.',
-      },
-    ],
-    linkApp: '/',
-    linkRepo: '/',
   },
 ];
 
