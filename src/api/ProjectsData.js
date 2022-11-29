@@ -16,7 +16,7 @@ const ProjectsData = [
     image: transfersApp,
     name: 'Transfers App',
     roles: ['All', 'Front-End', 'Back-End', 'Full-Stack'],
-    stacks: ['ReactJS', 'HTML', 'CSS', 'JavaScript', 'NodeJS', 'Fastify', 'JWT', 'Prisma'],
+    stacks: ['ReactJS', 'HTML', 'CSS', 'JavaScript', 'TypeScript', 'NodeJS', 'Fastify', 'JWT', 'Prisma'],
     paragraphs: [
       {
         id: 0,
