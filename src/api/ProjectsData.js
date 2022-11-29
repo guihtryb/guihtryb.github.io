@@ -31,25 +31,6 @@ const ProjectsData = [
     linkRepo: 'https://github.com/guihtryb/transfers-app',
   },
   {
-    video: getItVideo,
-    image: getItImg,
-    name: 'Get it!',
-    roles: ['All', 'Back-End', 'Front-End', 'Full-Stack'],
-    stacks: ['ReactJS', 'HTML', 'CSS', 'JWT', 'GitHub', 'NodeJS'],
-    paragraphs: [
-      {
-        id: 0,
-        content: 'Projeto individual, trata-se de um E-commerce em que é possível comprar items tanto com dinheiro quanto com pontos obtidos na plataforma.',
-      },
-      {
-        id: 1,
-        content: 'A aplicação possui páginas específicas para pessoa consumidora e adminstradora.',
-      },
-    ],
-    linkApp: '/',
-    linkRepo: 'https://github.com/guihtryb/get-it-controle-de-pontos',
-  },
-  {
     video: interativeRatingVideo,
     image: interativeRatingImg,
     name: 'Interactive Rating',
@@ -67,6 +48,25 @@ const ProjectsData = [
     ],
     linkApp: 'https://guihtryb.github.io/project-00-interactive-rating/',
     linkRepo: 'https://github.com/guihtryb/project-00-interactive-rating',
+  },
+  {
+    video: getItVideo,
+    image: getItImg,
+    name: 'Get it!',
+    roles: ['All', 'Back-End', 'Front-End', 'Full-Stack'],
+    stacks: ['ReactJS', 'HTML', 'CSS', 'JWT', 'GitHub', 'NodeJS'],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Projeto individual, trata-se de um E-commerce em que é possível comprar items tanto com dinheiro quanto com pontos obtidos na plataforma.',
+      },
+      {
+        id: 1,
+        content: 'A aplicação possui páginas específicas para pessoa consumidora e adminstradora.',
+      },
+    ],
+    linkApp: '/',
+    linkRepo: 'https://github.com/guihtryb/get-it-controle-de-pontos',
   },
   {
     video: wcVideo,
