@@ -54,7 +54,7 @@ const ProjectsData = [
     image: getItImg,
     name: 'Get it!',
     roles: ['All', 'Back-End', 'Front-End', 'Full-Stack'],
-    stacks: ['ReactJS', 'HTML', 'CSS', 'JWT', 'GitHub', 'NodeJS', 'JavaScript'],
+    stacks: ['ReactJS', 'HTML', 'CSS', 'JWT', 'GitHub', 'NodeJS', 'JavaScript', 'MySQL'],
     paragraphs: [
       {
         id: 0,
