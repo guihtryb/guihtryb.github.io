@@ -10,7 +10,29 @@ import transfersAppVideo from '../videos/project-transfers-app.mp4';
 import interativeRatingImg from '../images/project-interative-rating.avif';
 import interativeRatingVideo from '../videos/project-interative-rating.mp4';
 
+import bikcraftImg from '../images/project-bikcraft.avif';
+import bikcraftVideo from '../videos/project-bikcraft.mp4';
+
 const ProjectsData = [
+  {
+    video: bikcraftVideo,
+    image: bikcraftImg,
+    name: 'Bikcraft',
+    roles: ['All', 'Front-End'],
+    stacks: ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'],
+    paragraphs: [
+      {
+        id: 0,
+        content: 'Esse projeto eu desenvolvi durante o curso de JavaScript ES6+ Completo da Origamid.',
+      },
+      {
+        id: 1,
+        content: 'Utilizei JavaScript, HTML & CSS para o desenvolvimento do projeto. Utilizei esse projeto para me aprofundar na construção e estilização de formulários, como o da página de checkout. Também foi importante pra mim para praticar tanto o CSS Grid Layout quanto o Flex Box.',
+      },
+    ],
+    linkApp: 'https://guihtryb.github.io/bikcraft/',
+    linkRepo: 'https://github.com/guihtryb/bikcraft',
+  },
   {
     video: transfersAppVideo,
     image: transfersApp,
@@ -73,7 +95,7 @@ const ProjectsData = [
     image: wcImg,
     name: 'Wonderful Cities',
     roles: ['All', 'Front-End', 'QA'],
-    stacks: ['ReactJS', 'HTML', 'CSS', 'Cypress.io', 'RTL', 'JavaScript'],
+    stacks: ['ReactJS', 'HTML', 'CSS', 'Cypress.io', 'RTL', 'JavaScript', 'Jest'],
     paragraphs: [
       {
         id: 0,
