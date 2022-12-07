@@ -99,14 +99,18 @@ const ProjectsData = [
     paragraphs: [
       {
         id: 0,
-        content: 'Esse projeto eu desenvolvi durante o curso de JavaScript ES6+ Completo da Origamid. Originalmente com o tema sobre Animais, resolvi refazer o projeto utilizando React, com o método TDD.',
+        content: 'Esse projeto eu desenvolvi durante o curso de JavaScript ES6+ Completo da Origamid.',
       },
       {
         id: 1,
-        content: 'Utilizei ferramentas como React Context API e React Hooks, e minha maior conquista nesse projeto foi escrever meus primeiros testes utilizando o Cypress.io.',
+        content: 'Originalmente com o tema sobre Animais, resolvi refazer o projeto com o tema voltado a cidades, utilizando React e o método TDD.',
       },
       {
         id: 2,
+        content: 'Utilizei ferramentas como React Context API e React Hooks, e minha maior conquista nesse projeto foi escrever meus primeiros testes utilizando o Cypress.io.',
+      },
+      {
+        id: 3,
         content: 'Slides, accordion lists, tooltip entre outros recursos foram implementados para melhorar a experiência do usuário.',
       },
     ],
